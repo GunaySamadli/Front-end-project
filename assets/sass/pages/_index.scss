@@ -1,0 +1,238 @@
+body {
+    background-color: $color-primary;
+
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        background-color: $color-primary;
+
+        .container {
+            padding: 2.4rem 0;
+
+            .row {
+                @include flexbox();
+
+                .col-7 ul {
+                    @include flexbox(flex, space-around, center);
+
+                    li a {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    header {
+        padding: 12rem 1.6rem 12rem 4.8rem;
+        margin: 0;
+        background-image: url(../images/hero-background.png);
+        background-position: 100% 100%;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-color: $color-primary;
+
+        .col-6 {
+            h1 {
+                font-size: 4.5rem;
+                line-height: 140%;
+                margin-bottom: 2.4rem;
+
+            }
+
+            .subheading-hero-homepage {
+                font-family: $font-family-base;
+                color: $color-white;
+                font-size: 1.6rem;
+                line-height: 150%;
+                font-weight: 300;
+                margin-bottom: 2.4rem;
+            }
+
+            .container-trust-hero {
+                margin-top: 12rem;
+
+                .paragraph {
+                    color: $color-gray;
+                    font-size: 1.4rem;
+                    font-style: italic;
+                }
+
+                .container-trust-logos {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 1.6rem;
+                    opacity: 0.48;
+
+                    img {
+                        height: 4rem;
+                        margin-right: 2.4rem;
+                        flex: 0 auto;
+                    }
+                }
+            }
+        }
+
+        .col-6 {
+            .image {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .section-global {
+        background-color: $color-primary-hover;
+        padding: 14rem 8rem;
+
+        .container.header {
+            .col-6 {
+                .left {
+                    max-width: none;
+                    padding-right: 0;
+                    font-size: 3.3rem;
+                    font-family: "Inter", sans-serif;
+                    font-size: 4rem;
+                    line-height: 140%;
+                    font-weight: 600;
+                }
+
+                .right {
+                    color: $color-white;
+                    font-family: "Inter", sans-serif;
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .container.footer {
+            max-width: 1220rem;
+            padding-top: 10rem;
+            padding-bottom: 5rem;
+            border-radius: 1.6rem;
+
+            .row {
+                max-width: 1220rem;
+                padding-top: 4.8rem;
+                padding-bottom: 4rem;
+                border-radius: 1.6rem;
+                background-color: #5b35d5;
+                text-align: center;
+
+                .col-6 {
+                    font-family: $font-family-base;
+
+                    .heading {
+                        font-size: 4rem;
+                        line-height: 130%;
+                        font-weight: 600;
+                        text-align: left;
+                        padding: 0 2.4rem;
+                        margin-top: 5rem;
+                    }
+
+                    .paragraph {
+                        text-align: left;
+                        padding: 0 2.4rem;
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        margin-top: 0;
+                        margin-bottom: 2.4rem;
+                        line-height: 150%;
+                    }
+                }
+
+                .col-6 img {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+
+            }
+        }
+    }
+
+    .section-feature {
+        padding: 14rem 8rem;
+
+        .container.product {
+            padding-bottom: 12rem;
+
+            .row {
+                border-radius: 1.6rem;
+                text-align: center;
+                background-image: url(../images/paraldax.png), linear-gradient(100deg, #1b1734, #0f0d1e);
+                background-position: 100% 100%, 0 0;
+                background-size: auto 70%, auto;
+                background-attachment: fixed, scroll;
+                background-repeat: no-repeat;
+
+                .col-6 {
+                    padding: 10rem 4.8rem 10rem 8rem;
+
+                    .content-feature {
+                        text-align: left;
+
+                        .base-heading {
+                            font-family: $font-family-secondary;
+                            margin-top: 0;
+                            font-family: "Rajdhani", sans-serif;
+                            font-size: 1.8rem;
+                            line-height: 1.5;
+                            font-weight: 500;
+                            text-align: left;
+                            letter-spacing: 0.15rem;
+                        }
+
+                        .base-heading.green {
+                            color: $color-heading-green;
+                        }
+
+                        .base-heading.blue {
+                            color: $color-heading-blue;
+                        }
+
+                        .base-heading.orange {
+                            color: $color-heading-orange;
+                        }
+
+                        .heading {
+                            font-family: $font-family-base;
+                            padding: 2rem 0;
+                            max-width: none;
+                            font-size: 3.3rem;
+                            font-size: 4rem;
+                            line-height: 140%;
+                            font-weight: 600;
+                        }
+
+                        .paragraph {
+                            padding: 1rem 0;
+                            color: $color-gray;
+                            font-size: 18px;
+                            font-weight: 300;
+                            line-height: 150%;
+                        }
+
+                        .btn-product {
+                            padding-top: 3rem;
+                        }
+
+                    }
+                }
+
+                .col-6 img {
+                    width: 100%;
+                    margin: 30% auto;
+                    border: 1px transparent;
+                    border-radius: 8px;
+                }
+
+            }
+        }
+
+    }
+}
