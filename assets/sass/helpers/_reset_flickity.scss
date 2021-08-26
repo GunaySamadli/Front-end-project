@@ -1,0 +1,26 @@
+@import "../mixins";
+
+.flickity-page-dots {
+    bottom: 10px;
+}
+
+.flickity-button {
+    background: transparent;
+}
+
+.flickity-button-icon {
+    fill: #c4c4c4;
+}
+
+.main-center__carousel {
+    .flickity-viewport {
+        @media only screen and (max-width: 36rem) {
+            height: 205px !important;
+        }
+    }
+    .flickity-button {
+        @include respond(phone) {
+            display: none;
+        }
+    }
+}

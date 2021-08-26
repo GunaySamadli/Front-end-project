@@ -1,0 +1,13 @@
+@import "../vendors/bootstrap-5.1.0/scss/bootstrap-grid.scss";
+@import "../vendors/bootstrap-5.1.0/scss/bootstrap-utilities.scss";
+
+@import "mixins";
+@import "variables";
+@import "typography";
+@import "base";
+@import "common";
+
+// Remix & Fontawesome icon scss file import
+
+
+@import "pages/index";
