@@ -6748,6 +6748,9 @@ a {
   text-decoration: none;
   color: #ffffff; }
 
+section {
+  padding: 14rem 4.8rem; }
+
 .button {
   border: none;
   padding: 1.2px 2.4px;
@@ -6806,15 +6809,22 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center; }
-        body nav .container .row .col-7 ul {
+        body nav .container .row .col-8 {
           display: flex;
           justify-content: space-around;
           align-items: center; }
-          body nav .container .row .col-7 ul li a {
-            font-size: 1.6rem; }
+          body nav .container .row .col-8 ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center; }
+            body nav .container .row .col-8 ul a {
+              white-space: nowrap;
+              padding: 1rem 1.5rem;
+              font-size: 1.6rem; }
   body header {
     padding: 12rem 1.6rem 12rem 4.8rem;
     margin: 0;
+    font-family: "Inter";
     background-image: url(../images/hero-background.png);
     background-position: 100% 100%;
     background-size: 60%;
@@ -6846,8 +6856,10 @@ body {
           height: 4rem;
           margin-right: 2.4rem;
           flex: 0 auto; }
-    body header .col-6 .image img {
-      width: 100%; }
+    body header .col-6 .image {
+      margin-top: 40px; }
+      body header .col-6 .image img {
+        width: 100%; }
   body .section-global {
     background-color: #1b1734;
     padding: 14rem 8rem; }
@@ -6948,3 +6960,101 @@ body {
           margin: 30% auto;
           border: 1px transparent;
           border-radius: 8px; }
+  body .section-card {
+    background-color: #1b1734;
+    padding: 14rem 8rem; }
+    body .section-card .heading {
+      text-align: center;
+      position: static;
+      min-height: auto;
+      min-width: auto;
+      margin-top: 0;
+      margin-bottom: 2.4rem;
+      font-family: Inter, sans-serif;
+      color: #ffffff;
+      font-size: 4.8rem;
+      line-height: 120%;
+      font-weight: 600; }
+    body .section-card .container {
+      margin: 5.6rem 0; }
+      body .section-card .container .row .col-4 .card-item {
+        padding-right: 6.4rem; }
+        body .section-card .container .row .col-4 .card-item .heading {
+          text-align: left;
+          margin-top: 2.4rem;
+          margin-bottom: 0;
+          font-family: Inter, sans-serif;
+          color: #ffffff;
+          font-size: 2rem;
+          line-height: 150%;
+          font-weight: 500; }
+        body .section-card .container .row .col-4 .card-item .paragraph {
+          text-align: left;
+          max-width: 80%;
+          min-height: auto;
+          margin: 0;
+          min-width: auto;
+          margin-top: 1rem;
+          color: #adaabf;
+          font-size: 2rem;
+          font-weight: 300; }
+    body .section-card .btn-card {
+      text-align: center;
+      padding: 5rem 0; }
+  body .section-testimonials {
+    background-color: #5b35d5; }
+    body .section-testimonials .heading {
+      font-size: 3.5rem;
+      margin-bottom: 2.4rem; }
+    body .section-testimonials .container .row .col-md-7 {
+      margin: 0 auto; }
+      body .section-testimonials .container .row .col-md-7 .col-4 .tab-testimonial {
+        margin-top: 4.8rem;
+        display: flex;
+        padding: 2.4rem 0.8rem;
+        align-items: center;
+        border-style: none none solid;
+        border-width: 0 0 0.2rem;
+        border-color: #5b35d5 #5b35d5 #ff9a83;
+        background-color: transparent;
+        opacity: 1; }
+        body .section-testimonials .container .row .col-md-7 .col-4 .tab-testimonial img {
+          height: 6rem;
+          margin-right: 1.4rem;
+          border-radius: 0; }
+        body .section-testimonials .container .row .col-md-7 .col-4 .tab-testimonial .text-box-header {
+          font-size: 1.8rem;
+          font-weight: 500; }
+        body .section-testimonials .container .row .col-md-7 .col-4 .tab-testimonial .text-box-footer {
+          font-size: 1.6rem; }
+    body .section-testimonials .container.testimonials {
+      padding-bottom: 12rem; }
+      body .section-testimonials .container.testimonials .row {
+        border-radius: 1.6rem;
+        text-align: center;
+        background-color: #ffffff; }
+        body .section-testimonials .container.testimonials .row .content-testimonials {
+          text-align: left;
+          padding: 80px 120px 64px; }
+          body .section-testimonials .container.testimonials .row .content-testimonials .text-testimonials-header {
+            margin-bottom: 16px;
+            color: #0f0d1e;
+            font-size: 24px;
+            line-height: 170%;
+            font-weight: 300;
+            text-align: center; }
+          body .section-testimonials .container.testimonials .row .content-testimonials .text-testimonials-footer {
+            margin-right: auto;
+            margin-left: auto;
+            color: #5b35d5;
+            font-size: 18px;
+            text-align: center; }
+  body .section-action .action-info {
+    text-align: center; }
+    body .section-action .action-info .heading {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      color: #fff;
+      font-size: 35px;
+      font-weight: 600; }

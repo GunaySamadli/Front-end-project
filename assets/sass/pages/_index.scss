@@ -14,12 +14,20 @@ body {
             .row {
                 @include flexbox();
 
-                .col-7 ul {
+                .col-8 {
                     @include flexbox(flex, space-around, center);
 
-                    li a {
-                        font-size: 1.6rem;
+                    ul {
+                        @include flexbox(flex, space-around, center);
+
+                        a {
+                            white-space: nowrap;
+                            padding: 1rem 1.5rem;
+                            font-size: 1.6rem;
+                        }
                     }
+
+
                 }
             }
         }
@@ -28,6 +36,7 @@ body {
     header {
         padding: 12rem 1.6rem 12rem 4.8rem;
         margin: 0;
+        font-family: $font-family-inter;
         background-image: url(../images/hero-background.png);
         background-position: 100% 100%;
         background-size: 60%;
@@ -76,7 +85,10 @@ body {
         }
 
         .col-6 {
+
             .image {
+                margin-top: 40px;
+
                 img {
                     width: 100%;
                 }
@@ -234,5 +246,160 @@ body {
             }
         }
 
+    }
+
+    .section-card {
+        background-color: $color-primary-hover;
+        padding: 14rem 8rem;
+
+        .heading {
+            text-align: center;
+            position: static;
+            min-height: auto;
+            min-width: auto;
+            margin-top: 0;
+            margin-bottom: 2.4rem;
+            font-family: Inter, sans-serif;
+            color: $color-white;
+            font-size: 4.8rem;
+            line-height: 120%;
+            font-weight: 600;
+        }
+
+        .container {
+            margin: 5.6rem 0;
+
+            .row {
+                .col-4 {
+                    .card-item {
+                        padding-right: 6.4rem;
+
+                        .heading {
+                            text-align: left;
+                            margin-top: 2.4rem;
+                            margin-bottom: 0;
+                            font-family: Inter, sans-serif;
+                            color: $color-white;
+                            font-size: 2rem;
+                            line-height: 150%;
+                            font-weight: 500;
+                        }
+
+                        .paragraph {
+                            text-align: left;
+                            max-width: 80%;
+                            min-height: auto;
+                            margin: 0;
+                            min-width: auto;
+                            margin-top: 1rem;
+                            color: $color-gray;
+                            font-size: 2rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-card {
+            text-align: center;
+            padding: 5rem 0;
+        }
+    }
+
+    .section-testimonials {
+        background-color: #5b35d5;
+
+        .heading {
+            font-size: 3.5rem;
+            margin-bottom: 2.4rem;
+        }
+
+        .container {
+            .row {
+                .col-md-7 {
+                    margin: 0 auto;
+
+                    .col-4 {
+                        .tab-testimonial {
+                            margin-top: 4.8rem;
+                            display: flex;
+                            padding: 2.4rem 0.8rem;
+                            align-items: center;
+                            border-style: none none solid;
+                            border-width: 0 0 0.2rem;
+                            border-color: #5b35d5 #5b35d5 #ff9a83;
+                            background-color: transparent;
+                            opacity: 1;
+
+                            img {
+                                height: 6rem;
+                                margin-right: 1.4rem;
+                                border-radius: 0;
+                            }
+
+                            .text-box-header {
+                                font-size: 1.8rem;
+                                font-weight: 500;
+                            }
+
+                            .text-box-footer {
+                                font-size: 1.6rem;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .container.testimonials {
+            padding-bottom: 12rem;
+
+            .row {
+                border-radius: 1.6rem;
+                text-align: center;
+                background-color: $color-white;
+
+                .content-testimonials {
+                    text-align: left;
+                    padding: 80px 120px 64px;
+
+                    .text-testimonials-header {
+                        margin-bottom: 16px;
+                        color: #0f0d1e;
+                        font-size: 24px;
+                        line-height: 170%;
+                        font-weight: 300;
+                        text-align: center;
+                    }
+
+                    .text-testimonials-footer {
+                        margin-right: auto;
+                        margin-left: auto;
+                        color: #5b35d5;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .section-action {
+        .action-info {
+            text-align: center;
+
+            .heading {
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 5rem;
+                color: #fff;
+                font-size: 35px;
+                font-weight: 600;
+            }
+        }
     }
 }
