@@ -53,6 +53,9 @@ $(document).ready(function () {
 
 
 
+
+// blog section
+
 const tabTestimonials = Array.from(document.querySelectorAll(" .tab-testimonial"));
 const tabContents = Array.from(document.querySelectorAll(".content-testimonials .content-testimonial"));
 
@@ -75,4 +78,58 @@ tabTestimonials.forEach(tabTestimonial => {
         tabTestimonial.classList.add("active");
         targetContent.classList.add("active")
     }
+})
+
+
+
+// Modal
+
+// const Play = document.querySelector(".image .link-watch-video #play");
+// const Close = document.querySelector("#close");
+// const Modal = document.querySelector(".modal");
+
+// Play.addEventListener("click", () => {
+//     Modal.classList.add("show")
+// });
+
+// Close.addEventListener("click", () => {
+//     Modal.classList.remove("show");
+//     var iframes = Modal.getElementsByTagName('iframe');
+//     if (iframes != null) {
+//         for (let i = 0; i < iframes.length; i++) {
+//             const iframe = iframes[i];
+//             iframe.src = iframe.src;
+
+//         }
+//     }
+// })
+
+{
+    "items"[
+        {
+            "type": "video",
+            "originalUrl": "https://www.youtube.com/watch?v=ei7sNwLzapI&autoplay=true",
+            "url": "https://www.youtube.com/watch?v=ei7sNwLzapI&autoplay=true",
+            "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fei7sNwLzapI%3Fautoplay%3D1%26feature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dei7sNwLzapI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fei7sNwLzapI%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&autoplay=1&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+            "thumbnailUrl": "https://i.ytimg.com/vi/ei7sNwLzapI/hqdefault.jpg",
+            "width": 940,
+            "height": 528
+        }
+    ]
+}
+
+$(document).ready(function () {
+    $(".backtotop").fadeOut();
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $(".backtotop").fadeIn();
+        }
+        else {
+            $(".backtotop").fadeOut();
+        }
+    });
+    $(".backtotop").click(function () {
+        $("html,body").animate({ scrollTop: -2 }, 700);
+        return false;
+    })
 })
