@@ -13,160 +13,202 @@ body {
         .container {
             position: relative;
 
-            .custom-nav {
-                padding-top: 16px;
-                padding-bottom: 16px;
-                @include flexbox(flex, space-between, center);
 
-                nav {
+            .row {
 
-                    .container-fluid {
-                        @include flexbox();
 
-                        ul {
-                            @include flexbox(flex, space-around, center);
+                .custom-nav {
+                    padding-top: 2rem;
+                    @include flexbox(flex, space-between, center);
 
-                            li {
-                                position: relative;
+                    nav {
 
-                                a {
+
+                        .container-fluid {
+                            @include flexbox();
+                            padding-top: 16px;
+                            padding-bottom: 16px;
+
+                            ul {
+                                @include flexbox(flex, space-around, center);
+
+                                li {
+                                    position: relative;
                                     white-space: nowrap;
                                     padding: 1rem 1.5rem;
                                     font-size: 1.6rem;
 
-                                }
+                                    .nav-link {
+                                        white-space: nowrap;
+                                        padding: 1rem 1.5rem;
+                                        font-size: 1.6rem;
 
-                                .drop-menu {
-                                    @include flexbox(flex, space-around, flex-start);
-                                    flex-direction: column;
-                                    overflow: auto;
-                                    max-height: 85vh;
-                                    margin-top: 8px;
-                                    padding: 0 16px;
-                                    border: 1px solid #dedcee;
-                                    border-radius: 8px;
-                                    padding-top: 24px;
-                                    padding-bottom: 24px;
-                                    background-color: $color-white;
-                                    text-align: left;
-                                    flex-direction: column;
-                                    align-items: flex-start;
-                                    position: absolute;
-                                    top: 180%;
-                                    padding: 10px;
-                                    display: none;
+                                        &:hover {
+                                            background-color: $color-primary-hover
+                                        }
 
-                                    .nav-item {
+                                    }
 
-                                        a {
-                                            padding: 10px 20px;
-                                            display: block;
-                                            color: #222;
-                                            font-size: 1.6rem;
+                                    a button {
+                                        &:hover {
+                                            border-style: solid;
+                                            border-color: #322b5f;
+                                            background-color: #1b1734;
+                                        }
+                                    }
+
+                                    .drop-menu {
+                                        @include flexbox(flex, space-around, flex-start);
+                                        flex-direction: column;
+                                        overflow: auto;
+                                        max-height: 85vh;
+                                        margin-top: 8px;
+                                        padding: 0 16px;
+                                        border: 1px solid #dedcee;
+                                        border-radius: 8px;
+                                        padding-top: 24px;
+                                        padding-bottom: 24px;
+                                        background-color: $color-white;
+                                        text-align: left;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        position: absolute;
+                                        top: 180%;
+                                        padding: 10px;
+                                        display: none;
+
+                                        .nav-item {
 
                                             &:hover {
                                                 color: $color-link-hover;
+                                                background-color: $color-white;
                                             }
 
+                                            a {
+                                                padding: 10px 20px;
+                                                display: block;
+                                                color: #222;
+                                                font-size: 1.6rem;
+
+
+                                                &:hover {
+                                                    color: $color-link-hover;
+                                                    background-color: $color-white;
+                                                }
+
+                                            }
+
+                                            .nav-link.bold {}
+
+                                            ul {
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: flex-start;
+
+                                                .nav link {
+
+                                                    a {}
+                                                }
+                                            }
                                         }
 
-                                        ul {
-                                            display: flex;
-                                            flex-direction: column;
-                                            align-items: flex-start;
+                                        .nav-item.bold {
 
+                                            a {
 
-                                            .li {
+                                                font-weight: bold;
+                                            }
 
-                                                a {}
+                                            ul li a {
+                                                font-weight: 300;
                                             }
                                         }
                                     }
                                 }
                             }
-                        }
 
+                        }
+                    }
+
+                    .icon-menu {
+                        display: none;
                     }
                 }
 
-                .icon-menu {
-                    display: none;
-                }
-            }
+                .custom-responsive-nav {
+                    position: absolute;
+                    z-index: 999999;
+                    width: 100%;
 
-            .custom-responsive-nav {
-                position: absolute;
-                z-index: 999999;
-                width: 100%;
+                    nav {
 
-                nav {
+                        .container-fluid {
+                            list-style: none;
+                            padding: 0;
+                            background-color: $color-white;
 
-                    .container-fluid {
-                        list-style: none;
-                        padding: 0;
-                        background-color: $color-white;
+                            ul {
 
-                        ul {
+                                li {
 
-                            li {
+                                    a {
+                                        font-size: 2rem;
+                                        list-style: none;
+                                        padding: 0;
+                                        background-color: $color-white;
+                                    }
 
-                                a {
-                                    font-size: 2rem;
-                                    list-style: none;
-                                    padding: 0;
-                                    background-color: $color-white;
+                                    // .drop-menu {
+                                    //     @include flexbox(flex, space-around, flex-start);
+                                    //     flex-direction: column;
+                                    //     overflow: auto;
+                                    //     max-height: 85vh;
+                                    //     margin-top: 8px;
+                                    //     padding: 0 16px;
+                                    //     border: 1px solid #dedcee;
+                                    //     border-radius: 8px;
+                                    //     padding-top: 24px;
+                                    //     padding-bottom: 24px;
+                                    //     background-color: $color-white;
+                                    //     text-align: left;
+                                    //     flex-direction: column;
+                                    //     align-items: flex-start;
+                                    //     position: absolute;
+                                    //     top: 180%;
+                                    //     padding: 10px;
+                                    //     display: none;
+
+                                    //     .nav-item {
+
+                                    //         a {
+                                    //             padding: 10px 20px;
+                                    //             display: block;
+                                    //             color: #222;
+                                    //             font-size: 1.6rem;
+
+                                    //             &:hover {
+                                    //                 color: $color-link-hover;
+                                    //             }
+
+                                    //         }
+
+                                    //         ul {
+                                    //             display: flex;
+                                    //             flex-direction: column;
+                                    //             align-items: flex-start;
+
+
+                                    //             .li {
+
+                                    //                 a {}
+                                    //             }
+                                    //         }
+                                    //     }
+                                    // }
                                 }
-
-                                // .drop-menu {
-                                //     @include flexbox(flex, space-around, flex-start);
-                                //     flex-direction: column;
-                                //     overflow: auto;
-                                //     max-height: 85vh;
-                                //     margin-top: 8px;
-                                //     padding: 0 16px;
-                                //     border: 1px solid #dedcee;
-                                //     border-radius: 8px;
-                                //     padding-top: 24px;
-                                //     padding-bottom: 24px;
-                                //     background-color: $color-white;
-                                //     text-align: left;
-                                //     flex-direction: column;
-                                //     align-items: flex-start;
-                                //     position: absolute;
-                                //     top: 180%;
-                                //     padding: 10px;
-                                //     display: none;
-
-                                //     .nav-item {
-
-                                //         a {
-                                //             padding: 10px 20px;
-                                //             display: block;
-                                //             color: #222;
-                                //             font-size: 1.6rem;
-
-                                //             &:hover {
-                                //                 color: $color-link-hover;
-                                //             }
-
-                                //         }
-
-                                //         ul {
-                                //             display: flex;
-                                //             flex-direction: column;
-                                //             align-items: flex-start;
-
-
-                                //             .li {
-
-                                //                 a {}
-                                //             }
-                                //         }
-                                //     }
-                                // }
                             }
-                        }
 
+                        }
                     }
                 }
             }
@@ -461,11 +503,8 @@ body {
                             display: flex;
                             padding: 2.4rem 0.8rem;
                             align-items: center;
-                            border-style: none none solid;
-                            border-width: 0 0 0.2rem;
-                            border-color: #5b35d5 #5b35d5 #ff9a83;
-                            background-color: transparent;
-                            opacity: 1;
+                            opacity: .64;
+
 
                             img {
                                 height: 6rem;
@@ -483,6 +522,15 @@ body {
                             }
 
 
+
+
+                        }
+
+                        .tab-testimonial.active {
+                            border-style: none none solid;
+                            border-color: #5b35d5 #5b35d5 #ff9a83;
+                            background-color: transparent;
+                            opacity: 1;
                         }
                     }
                 }
@@ -490,34 +538,45 @@ body {
         }
 
         .container.testimonials {
-            padding-bottom: 12rem;
 
             .row {
-                border-radius: 1.6rem;
                 text-align: center;
-                background-color: $color-white;
 
                 .content-testimonials {
-                    text-align: left;
-                    padding: 80px 120px 64px;
+                    position: relative;
+                    padding-bottom: 20rem;
 
-                    .text-testimonials-header {
-                        margin-bottom: 16px;
-                        color: #0f0d1e;
-                        font-size: 24px;
-                        line-height: 170%;
-                        font-weight: 300;
-                        text-align: center;
+                    .content-testimonial {
+                        text-align: left;
+                        padding: 80px 120px 64px;
+                        visibility: hidden;
+                        position: absolute;
+                        width: 100%;
+                        background-color: $color-white;
+                        border-radius: 10px;
+
+                        .text-testimonials-header {
+                            margin-bottom: 16px;
+                            color: #0f0d1e;
+                            font-size: 24px;
+                            line-height: 170%;
+                            font-weight: 300;
+                            text-align: center;
+                        }
+
+                        .text-testimonials-footer {
+                            margin-right: auto;
+                            margin-left: auto;
+                            color: #5b35d5;
+                            font-size: 18px;
+                            text-align: center;
+                        }
+
                     }
 
-                    .text-testimonials-footer {
-                        margin-right: auto;
-                        margin-left: auto;
-                        color: #5b35d5;
-                        font-size: 18px;
-                        text-align: center;
+                    .content-testimonial.active {
+                        visibility: visible;
                     }
-
                 }
             }
         }
@@ -647,6 +706,10 @@ body {
                             padding-bottom: 10rem;
                         }
                     }
+                }
+
+                &:hover {
+                    transform: translate(0, -4px);
                 }
             }
         }

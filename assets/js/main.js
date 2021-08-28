@@ -1,5 +1,6 @@
+
 $(document).ready(function () {
-    $('nav li').on('click', function (e) {
+    $('.icon-circle-right').on('click', function (e) {
         e.preventDefault();
         if ($('.drop-menu').css('display') == 'none') {
             $('.icon-circle-right').css({
@@ -49,3 +50,29 @@ $(document).ready(function () {
 //         bars.style.display = "inline-block";
 //     }
 // });
+
+
+
+const tabTestimonials = Array.from(document.querySelectorAll(" .tab-testimonial"));
+const tabContents = Array.from(document.querySelectorAll(".content-testimonials .content-testimonial"));
+
+const clearActives = function () {
+    tabTestimonials.forEach(tabTestimonial => {
+        tabTestimonial.classList.remove("active");
+    });
+    tabContents.forEach(tabContent => {
+        tabContent.classList.remove("active");
+    });
+}
+
+
+
+tabTestimonials.forEach(tabTestimonial => {
+    tabTestimonial.onclick = function () {
+        clearActives();
+        const targetId = tabTestimonial.getAttribute("data-target");
+        const targetContent = document.getElementById(targetId);
+        tabTestimonial.classList.add("active");
+        targetContent.classList.add("active")
+    }
+})

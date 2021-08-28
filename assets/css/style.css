@@ -6807,27 +6807,37 @@ body {
     background-color: #0f0d1e; }
     body header .container {
       position: relative; }
-      body header .container .custom-nav {
-        padding-top: 16px;
-        padding-bottom: 16px;
+      body header .container .row .custom-nav {
+        padding-top: 2rem;
         display: flex;
         justify-content: space-between;
         align-items: center; }
-        body header .container .custom-nav nav .container-fluid, body header .container .custom-nav nav .container-sm, body header .container .custom-nav nav .container-md, body header .container .custom-nav nav .container-lg, body header .container .custom-nav nav .container-xl, body header .container .custom-nav nav .container-xxl {
+        body header .container .row .custom-nav nav .container-fluid, body header .container .row .custom-nav nav .container-sm, body header .container .row .custom-nav nav .container-md, body header .container .row .custom-nav nav .container-lg, body header .container .row .custom-nav nav .container-xl, body header .container .row .custom-nav nav .container-xxl {
           display: flex;
           justify-content: space-between;
-          align-items: center; }
-          body header .container .custom-nav nav .container-fluid ul, body header .container .custom-nav nav .container-sm ul, body header .container .custom-nav nav .container-md ul, body header .container .custom-nav nav .container-lg ul, body header .container .custom-nav nav .container-xl ul, body header .container .custom-nav nav .container-xxl ul {
+          align-items: center;
+          padding-top: 16px;
+          padding-bottom: 16px; }
+          body header .container .row .custom-nav nav .container-fluid ul, body header .container .row .custom-nav nav .container-sm ul, body header .container .row .custom-nav nav .container-md ul, body header .container .row .custom-nav nav .container-lg ul, body header .container .row .custom-nav nav .container-xl ul, body header .container .row .custom-nav nav .container-xxl ul {
             display: flex;
             justify-content: space-around;
             align-items: center; }
-            body header .container .custom-nav nav .container-fluid ul li, body header .container .custom-nav nav .container-sm ul li, body header .container .custom-nav nav .container-md ul li, body header .container .custom-nav nav .container-lg ul li, body header .container .custom-nav nav .container-xl ul li, body header .container .custom-nav nav .container-xxl ul li {
-              position: relative; }
-              body header .container .custom-nav nav .container-fluid ul li a, body header .container .custom-nav nav .container-sm ul li a, body header .container .custom-nav nav .container-md ul li a, body header .container .custom-nav nav .container-lg ul li a, body header .container .custom-nav nav .container-xl ul li a, body header .container .custom-nav nav .container-xxl ul li a {
+            body header .container .row .custom-nav nav .container-fluid ul li, body header .container .row .custom-nav nav .container-sm ul li, body header .container .row .custom-nav nav .container-md ul li, body header .container .row .custom-nav nav .container-lg ul li, body header .container .row .custom-nav nav .container-xl ul li, body header .container .row .custom-nav nav .container-xxl ul li {
+              position: relative;
+              white-space: nowrap;
+              padding: 1rem 1.5rem;
+              font-size: 1.6rem; }
+              body header .container .row .custom-nav nav .container-fluid ul li .nav-link, body header .container .row .custom-nav nav .container-sm ul li .nav-link, body header .container .row .custom-nav nav .container-md ul li .nav-link, body header .container .row .custom-nav nav .container-lg ul li .nav-link, body header .container .row .custom-nav nav .container-xl ul li .nav-link, body header .container .row .custom-nav nav .container-xxl ul li .nav-link {
                 white-space: nowrap;
                 padding: 1rem 1.5rem;
                 font-size: 1.6rem; }
-              body header .container .custom-nav nav .container-fluid ul li .drop-menu, body header .container .custom-nav nav .container-sm ul li .drop-menu, body header .container .custom-nav nav .container-md ul li .drop-menu, body header .container .custom-nav nav .container-lg ul li .drop-menu, body header .container .custom-nav nav .container-xl ul li .drop-menu, body header .container .custom-nav nav .container-xxl ul li .drop-menu {
+                body header .container .row .custom-nav nav .container-fluid ul li .nav-link:hover, body header .container .row .custom-nav nav .container-sm ul li .nav-link:hover, body header .container .row .custom-nav nav .container-md ul li .nav-link:hover, body header .container .row .custom-nav nav .container-lg ul li .nav-link:hover, body header .container .row .custom-nav nav .container-xl ul li .nav-link:hover, body header .container .row .custom-nav nav .container-xxl ul li .nav-link:hover {
+                  background-color: #1b1734; }
+              body header .container .row .custom-nav nav .container-fluid ul li a button:hover, body header .container .row .custom-nav nav .container-sm ul li a button:hover, body header .container .row .custom-nav nav .container-md ul li a button:hover, body header .container .row .custom-nav nav .container-lg ul li a button:hover, body header .container .row .custom-nav nav .container-xl ul li a button:hover, body header .container .row .custom-nav nav .container-xxl ul li a button:hover {
+                border-style: solid;
+                border-color: #322b5f;
+                background-color: #1b1734; }
+              body header .container .row .custom-nav nav .container-fluid ul li .drop-menu, body header .container .row .custom-nav nav .container-sm ul li .drop-menu, body header .container .row .custom-nav nav .container-md ul li .drop-menu, body header .container .row .custom-nav nav .container-lg ul li .drop-menu, body header .container .row .custom-nav nav .container-xl ul li .drop-menu, body header .container .row .custom-nav nav .container-xxl ul li .drop-menu {
                 display: flex;
                 justify-content: space-around;
                 align-items: flex-start;
@@ -6848,28 +6858,36 @@ body {
                 top: 180%;
                 padding: 10px;
                 display: none; }
-                body header .container .custom-nav nav .container-fluid ul li .drop-menu .nav-item a, body header .container .custom-nav nav .container-sm ul li .drop-menu .nav-item a, body header .container .custom-nav nav .container-md ul li .drop-menu .nav-item a, body header .container .custom-nav nav .container-lg ul li .drop-menu .nav-item a, body header .container .custom-nav nav .container-xl ul li .drop-menu .nav-item a, body header .container .custom-nav nav .container-xxl ul li .drop-menu .nav-item a {
+                body header .container .row .custom-nav nav .container-fluid ul li .drop-menu .nav-item:hover, body header .container .row .custom-nav nav .container-sm ul li .drop-menu .nav-item:hover, body header .container .row .custom-nav nav .container-md ul li .drop-menu .nav-item:hover, body header .container .row .custom-nav nav .container-lg ul li .drop-menu .nav-item:hover, body header .container .row .custom-nav nav .container-xl ul li .drop-menu .nav-item:hover, body header .container .row .custom-nav nav .container-xxl ul li .drop-menu .nav-item:hover {
+                  color: #5b35d5;
+                  background-color: #ffffff; }
+                body header .container .row .custom-nav nav .container-fluid ul li .drop-menu .nav-item a, body header .container .row .custom-nav nav .container-sm ul li .drop-menu .nav-item a, body header .container .row .custom-nav nav .container-md ul li .drop-menu .nav-item a, body header .container .row .custom-nav nav .container-lg ul li .drop-menu .nav-item a, body header .container .row .custom-nav nav .container-xl ul li .drop-menu .nav-item a, body header .container .row .custom-nav nav .container-xxl ul li .drop-menu .nav-item a {
                   padding: 10px 20px;
                   display: block;
                   color: #222;
                   font-size: 1.6rem; }
-                  body header .container .custom-nav nav .container-fluid ul li .drop-menu .nav-item a:hover, body header .container .custom-nav nav .container-sm ul li .drop-menu .nav-item a:hover, body header .container .custom-nav nav .container-md ul li .drop-menu .nav-item a:hover, body header .container .custom-nav nav .container-lg ul li .drop-menu .nav-item a:hover, body header .container .custom-nav nav .container-xl ul li .drop-menu .nav-item a:hover, body header .container .custom-nav nav .container-xxl ul li .drop-menu .nav-item a:hover {
-                    color: #5b35d5; }
-                body header .container .custom-nav nav .container-fluid ul li .drop-menu .nav-item ul, body header .container .custom-nav nav .container-sm ul li .drop-menu .nav-item ul, body header .container .custom-nav nav .container-md ul li .drop-menu .nav-item ul, body header .container .custom-nav nav .container-lg ul li .drop-menu .nav-item ul, body header .container .custom-nav nav .container-xl ul li .drop-menu .nav-item ul, body header .container .custom-nav nav .container-xxl ul li .drop-menu .nav-item ul {
+                  body header .container .row .custom-nav nav .container-fluid ul li .drop-menu .nav-item a:hover, body header .container .row .custom-nav nav .container-sm ul li .drop-menu .nav-item a:hover, body header .container .row .custom-nav nav .container-md ul li .drop-menu .nav-item a:hover, body header .container .row .custom-nav nav .container-lg ul li .drop-menu .nav-item a:hover, body header .container .row .custom-nav nav .container-xl ul li .drop-menu .nav-item a:hover, body header .container .row .custom-nav nav .container-xxl ul li .drop-menu .nav-item a:hover {
+                    color: #5b35d5;
+                    background-color: #ffffff; }
+                body header .container .row .custom-nav nav .container-fluid ul li .drop-menu .nav-item ul, body header .container .row .custom-nav nav .container-sm ul li .drop-menu .nav-item ul, body header .container .row .custom-nav nav .container-md ul li .drop-menu .nav-item ul, body header .container .row .custom-nav nav .container-lg ul li .drop-menu .nav-item ul, body header .container .row .custom-nav nav .container-xl ul li .drop-menu .nav-item ul, body header .container .row .custom-nav nav .container-xxl ul li .drop-menu .nav-item ul {
                   display: flex;
                   flex-direction: column;
                   align-items: flex-start; }
-        body header .container .custom-nav .icon-menu {
+                body header .container .row .custom-nav nav .container-fluid ul li .drop-menu .nav-item.bold a, body header .container .row .custom-nav nav .container-sm ul li .drop-menu .nav-item.bold a, body header .container .row .custom-nav nav .container-md ul li .drop-menu .nav-item.bold a, body header .container .row .custom-nav nav .container-lg ul li .drop-menu .nav-item.bold a, body header .container .row .custom-nav nav .container-xl ul li .drop-menu .nav-item.bold a, body header .container .row .custom-nav nav .container-xxl ul li .drop-menu .nav-item.bold a {
+                  font-weight: bold; }
+                body header .container .row .custom-nav nav .container-fluid ul li .drop-menu .nav-item.bold ul li a, body header .container .row .custom-nav nav .container-sm ul li .drop-menu .nav-item.bold ul li a, body header .container .row .custom-nav nav .container-md ul li .drop-menu .nav-item.bold ul li a, body header .container .row .custom-nav nav .container-lg ul li .drop-menu .nav-item.bold ul li a, body header .container .row .custom-nav nav .container-xl ul li .drop-menu .nav-item.bold ul li a, body header .container .row .custom-nav nav .container-xxl ul li .drop-menu .nav-item.bold ul li a {
+                  font-weight: 300; }
+        body header .container .row .custom-nav .icon-menu {
           display: none; }
-      body header .container .custom-responsive-nav {
+      body header .container .row .custom-responsive-nav {
         position: absolute;
         z-index: 999999;
         width: 100%; }
-        body header .container .custom-responsive-nav nav .container-fluid, body header .container .custom-responsive-nav nav .container-sm, body header .container .custom-responsive-nav nav .container-md, body header .container .custom-responsive-nav nav .container-lg, body header .container .custom-responsive-nav nav .container-xl, body header .container .custom-responsive-nav nav .container-xxl {
+        body header .container .row .custom-responsive-nav nav .container-fluid, body header .container .row .custom-responsive-nav nav .container-sm, body header .container .row .custom-responsive-nav nav .container-md, body header .container .row .custom-responsive-nav nav .container-lg, body header .container .row .custom-responsive-nav nav .container-xl, body header .container .row .custom-responsive-nav nav .container-xxl {
           list-style: none;
           padding: 0;
           background-color: #ffffff; }
-          body header .container .custom-responsive-nav nav .container-fluid ul li a, body header .container .custom-responsive-nav nav .container-sm ul li a, body header .container .custom-responsive-nav nav .container-md ul li a, body header .container .custom-responsive-nav nav .container-lg ul li a, body header .container .custom-responsive-nav nav .container-xl ul li a, body header .container .custom-responsive-nav nav .container-xxl ul li a {
+          body header .container .row .custom-responsive-nav nav .container-fluid ul li a, body header .container .row .custom-responsive-nav nav .container-sm ul li a, body header .container .row .custom-responsive-nav nav .container-md ul li a, body header .container .row .custom-responsive-nav nav .container-lg ul li a, body header .container .row .custom-responsive-nav nav .container-xl ul li a, body header .container .row .custom-responsive-nav nav .container-xxl ul li a {
             font-size: 2rem;
             list-style: none;
             padding: 0;
@@ -7059,11 +7077,7 @@ body {
         display: flex;
         padding: 2.4rem 0.8rem;
         align-items: center;
-        border-style: none none solid;
-        border-width: 0 0 0.2rem;
-        border-color: #5b35d5 #5b35d5 #ff9a83;
-        background-color: transparent;
-        opacity: 1; }
+        opacity: .64; }
         body .section-testimonials .container .row .col-md-7 .col-4 .tab-testimonial img {
           height: 6rem;
           margin-right: 1.4rem;
@@ -7073,28 +7087,39 @@ body {
           font-weight: 500; }
         body .section-testimonials .container .row .col-md-7 .col-4 .tab-testimonial .text-box-footer {
           font-size: 1.6rem; }
-    body .section-testimonials .container.testimonials {
-      padding-bottom: 12rem; }
-      body .section-testimonials .container.testimonials .row {
-        border-radius: 1.6rem;
-        text-align: center;
-        background-color: #ffffff; }
-        body .section-testimonials .container.testimonials .row .content-testimonials {
+      body .section-testimonials .container .row .col-md-7 .col-4 .tab-testimonial.active {
+        border-style: none none solid;
+        border-color: #5b35d5 #5b35d5 #ff9a83;
+        background-color: transparent;
+        opacity: 1; }
+    body .section-testimonials .container.testimonials .row {
+      text-align: center; }
+      body .section-testimonials .container.testimonials .row .content-testimonials {
+        position: relative;
+        padding-bottom: 20rem; }
+        body .section-testimonials .container.testimonials .row .content-testimonials .content-testimonial {
           text-align: left;
-          padding: 80px 120px 64px; }
-          body .section-testimonials .container.testimonials .row .content-testimonials .text-testimonials-header {
+          padding: 80px 120px 64px;
+          visibility: hidden;
+          position: absolute;
+          width: 100%;
+          background-color: #ffffff;
+          border-radius: 10px; }
+          body .section-testimonials .container.testimonials .row .content-testimonials .content-testimonial .text-testimonials-header {
             margin-bottom: 16px;
             color: #0f0d1e;
             font-size: 24px;
             line-height: 170%;
             font-weight: 300;
             text-align: center; }
-          body .section-testimonials .container.testimonials .row .content-testimonials .text-testimonials-footer {
+          body .section-testimonials .container.testimonials .row .content-testimonials .content-testimonial .text-testimonials-footer {
             margin-right: auto;
             margin-left: auto;
             color: #5b35d5;
             font-size: 18px;
             text-align: center; }
+        body .section-testimonials .container.testimonials .row .content-testimonials .content-testimonial.active {
+          visibility: visible; }
   body .section-action .action-info {
     text-align: center; }
     body .section-action .action-info .heading {
@@ -7188,6 +7213,8 @@ body {
             font-size: 1.6rem; }
         body .section-blog .container .col-4 .card-blog-post .card-blog-post-content .div-date.third {
           padding-bottom: 10rem; }
+      body .section-blog .container .col-4:hover {
+        transform: translate(0, -4px); }
   body footer {
     padding: 80px 48px; }
     body footer .container {
