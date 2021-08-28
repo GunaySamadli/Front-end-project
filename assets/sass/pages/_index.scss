@@ -10,112 +10,169 @@ body {
         background-repeat: no-repeat;
         background-color: $color-primary;
 
-        .custom-nav {
-            padding-top: 16px;
-            padding-bottom: 16px;
+        .container {
+            position: relative;
 
-            nav {
-                .container-fluid {
-                    @include flexbox();
+            .custom-nav {
+                padding-top: 16px;
+                padding-bottom: 16px;
+                @include flexbox(flex, space-between, center);
 
-                    ul {
-                        @include flexbox(flex, space-around, center);
+                nav {
 
-                        li {
-                            position: relative;
+                    .container-fluid {
+                        @include flexbox();
 
-                            a {
-                                white-space: nowrap;
-                                padding: 1rem 1.5rem;
-                                font-size: 1.6rem;
+                        ul {
+                            @include flexbox(flex, space-around, center);
 
-                            }
+                            li {
+                                position: relative;
 
-                            .drop-menu {
-                                @include flexbox(flex, space-around, flex-start);
-                                flex-direction: column;
-                                overflow: auto;
-                                max-height: 85vh;
-                                margin-top: 8px;
-                                padding: 0 16px;
-                                border: 1px solid #dedcee;
-                                border-radius: 8px;
-                                padding-top: 24px;
-                                padding-bottom: 24px;
-                                background-color: $color-white;
-                                text-align: left;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                position: absolute;
-                                top: 180%;
-                                padding: 10px;
-                                display: none;
+                                a {
+                                    white-space: nowrap;
+                                    padding: 1rem 1.5rem;
+                                    font-size: 1.6rem;
 
-                                .nav-item {
+                                }
 
-                                    a {
-                                        padding: 10px 20px;
-                                        display: block;
-                                        color: #222;
-                                        font-size: 1.6rem;
+                                .drop-menu {
+                                    @include flexbox(flex, space-around, flex-start);
+                                    flex-direction: column;
+                                    overflow: auto;
+                                    max-height: 85vh;
+                                    margin-top: 8px;
+                                    padding: 0 16px;
+                                    border: 1px solid #dedcee;
+                                    border-radius: 8px;
+                                    padding-top: 24px;
+                                    padding-bottom: 24px;
+                                    background-color: $color-white;
+                                    text-align: left;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    position: absolute;
+                                    top: 180%;
+                                    padding: 10px;
+                                    display: none;
 
-                                        &:hover {
-                                            color: $color-link-hover;
+                                    .nav-item {
+
+                                        a {
+                                            padding: 10px 20px;
+                                            display: block;
+                                            color: #222;
+                                            font-size: 1.6rem;
+
+                                            &:hover {
+                                                color: $color-link-hover;
+                                            }
+
                                         }
 
-                                    }
-
-                                    ul {
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: flex-start;
+                                        ul {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-start;
 
 
-                                        .li {
+                                            .li {
 
-                                            a {}
+                                                a {}
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
-                    }
 
+                    }
+                }
+
+                .icon-menu {
+                    display: none;
+                }
+            }
+
+            .custom-responsive-nav {
+                position: absolute;
+                z-index: 999999;
+                width: 100%;
+
+                nav {
+
+                    .container-fluid {
+                        list-style: none;
+                        padding: 0;
+                        background-color: $color-white;
+
+                        ul {
+
+                            li {
+
+                                a {
+                                    font-size: 2rem;
+                                    list-style: none;
+                                    padding: 0;
+                                    background-color: $color-white;
+                                }
+
+                                // .drop-menu {
+                                //     @include flexbox(flex, space-around, flex-start);
+                                //     flex-direction: column;
+                                //     overflow: auto;
+                                //     max-height: 85vh;
+                                //     margin-top: 8px;
+                                //     padding: 0 16px;
+                                //     border: 1px solid #dedcee;
+                                //     border-radius: 8px;
+                                //     padding-top: 24px;
+                                //     padding-bottom: 24px;
+                                //     background-color: $color-white;
+                                //     text-align: left;
+                                //     flex-direction: column;
+                                //     align-items: flex-start;
+                                //     position: absolute;
+                                //     top: 180%;
+                                //     padding: 10px;
+                                //     display: none;
+
+                                //     .nav-item {
+
+                                //         a {
+                                //             padding: 10px 20px;
+                                //             display: block;
+                                //             color: #222;
+                                //             font-size: 1.6rem;
+
+                                //             &:hover {
+                                //                 color: $color-link-hover;
+                                //             }
+
+                                //         }
+
+                                //         ul {
+                                //             display: flex;
+                                //             flex-direction: column;
+                                //             align-items: flex-start;
+
+
+                                //             .li {
+
+                                //                 a {}
+                                //             }
+                                //         }
+                                //     }
+                                // }
+                            }
+                        }
+
+                    }
                 }
             }
         }
 
-        // nav {
-        //     position: sticky;
-        //     top: 0;
-        //     z-index: 999;
-        //     width: 100%;
-        //     background-color: $color-primary;
 
-        //     .container {
-        //         padding: 2.4rem 0;
-
-        //         .row {
-        //             @include flexbox();
-
-        //             .col-8 {
-        //                 @include flexbox(flex, space-around, center);
-
-        //                 ul {
-        //                     @include flexbox(flex, space-around, center);
-
-        //                     a {
-        //                         white-space: nowrap;
-        //                         padding: 1rem 1.5rem;
-        //                         font-size: 1.6rem;
-        //                     }
-        //                 }
-
-
-        //             }
-        //         }
-        //     }
-        // }
 
         .hero {
             padding: 120px 16px 120px 48px;
@@ -594,11 +651,210 @@ body {
             }
         }
     }
+
+    footer {
+        padding: 80px 48px;
+
+        .container {
+            margin-bottom: 4rem;
+
+            .row {
+                .col-2 {
+                    img {
+                        width: 40%;
+                    }
+                }
+
+                .col-4 {
+                    h2 {
+                        color: $color-gray;
+                        margin-top: 0;
+                        margin-bottom: 1.6rem;
+                        font-family: $font-family-rajdhani;
+                        font-size: 1.8rem;
+                        line-height: 1.5;
+                        font-weight: 500;
+                        text-align: left;
+                        letter-spacing: 0.2rem;
+                        text-transform: uppercase;
+                    }
+
+                    ul {
+                        font-size: 16px;
+                        line-height: 150%;
+                        font-weight: 300;
+                        color: $color-white;
+
+                        li a {
+                            display: inline-block;
+                            margin-bottom: 16px;
+                            color: #fff;
+                            font-size: 16px;
+                            line-height: 150%;
+                            font-weight: 300;
+                            text-decoration: none;
+                            white-space: nowrap;
+                            -o-object-fit: fill;
+                            object-fit: fill;
+                        }
+                    }
+                }
+
+                .col-2 {
+                    h2 {
+                        color: $color-gray;
+                        margin-top: 0;
+                        margin-bottom: 1.6rem;
+                        font-family: $font-family-rajdhani;
+                        font-size: 1.8rem;
+                        line-height: 1.5;
+                        font-weight: 500;
+                        text-align: left;
+                        letter-spacing: 0.2rem;
+                        text-transform: uppercase;
+                    }
+
+                    .paragraph {
+                        max-width: 80%;
+                        min-height: auto;
+                        min-width: auto;
+                        margin-top: 10px;
+                        color: $color-gray;
+                        font-size: 1.6rem;
+                        margin-bottom: 1.5rem;
+                        text-align: left;
+                    }
+
+                    form {
+                        input {
+                            border-radius: 0.4rem;
+                            color: $color-primary-hover;
+                            font-size: 17px;
+                            font-weight: 400;
+                            display: block;
+                            width: 100%;
+                            height: 38px;
+                            padding: 8px 12px;
+                            margin-bottom: 2rem;
+                            font-size: 14px;
+                            line-height: 1.42857143;
+                            background-color: $color-white;
+                            border: 1px solid #ccc;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .container {
+            .paragraph {
+                color: $color-gray;
+                text-align: center;
+                font-size: 1.6rem;
+                margin-top: 2rem;
+            }
+        }
+
+        .social-links {
+            margin-top: 1.6rem;
+        }
+    }
 }
 
 @media only screen and (max-width:1200px) {}
 
-@media only screen and (max-width:992px) {}
+@media only screen and (max-width:992px) {
+    body {
+        header {
+            .container {
+                .custom-nav {
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+
+                    nav {
+                        display: none;
+
+                        .container-fluid {
+                            @include flexbox();
+
+                            .navbar {
+                                @include flexbox(flex, space-around, center);
+
+                                li {
+                                    position: relative;
+
+                                    a {
+                                        white-space: nowrap;
+                                        padding: 1rem 1.5rem;
+                                        font-size: 1.6rem;
+
+                                    }
+
+                                    .drop-menu {
+                                        @include flexbox(flex, space-around, flex-start);
+                                        flex-direction: column;
+                                        overflow: auto;
+                                        max-height: 85vh;
+                                        margin-top: 8px;
+                                        padding: 0 16px;
+                                        border: 1px solid #dedcee;
+                                        border-radius: 8px;
+                                        padding-top: 24px;
+                                        padding-bottom: 24px;
+                                        background-color: $color-white;
+                                        text-align: left;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        position: absolute;
+                                        top: 180%;
+                                        padding: 10px;
+                                        display: none;
+
+                                        .nav-item {
+
+                                            a {
+                                                padding: 10px 20px;
+                                                display: block;
+                                                color: #222;
+                                                font-size: 1.6rem;
+
+                                                &:hover {
+                                                    color: $color-link-hover;
+                                                }
+
+                                            }
+
+                                            ul {
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: flex-start;
+
+
+                                                .li {
+
+                                                    a {}
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    .icon-menu {
+                        display: block;
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
 
 @media only screen and (max-width:768) {}
 
