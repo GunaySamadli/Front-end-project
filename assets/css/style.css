@@ -7910,3 +7910,108 @@ body {
         body #blog .blog-wrapper .blog-contents .blog-content .col-lg-6 .card-blog-post .col-7 .card-blog-post-content h2 {
           text-align: left;
           margin-bottom: 1.6rem; } }
+
+body section {
+  padding: 0;
+  margin: 0; }
+  body section .section-blog {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding: 8rem;
+    background-color: #ebeaf5; }
+    body section .section-blog .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      body section .section-blog .container .col-lg-12 {
+        max-width: 88rem; }
+        body section .section-blog .container .col-lg-12 h1 {
+          position: static;
+          max-width: 1440px;
+          margin-top: 0;
+          margin-bottom: 24px;
+          align-self: flex-start;
+          font-size: 56px;
+          line-height: 120%;
+          font-weight: 600;
+          text-align: left;
+          color: #0f0d1e; }
+        body section .section-blog .container .col-lg-12 .button {
+          width: 26%;
+          position: static;
+          font-family: "Rajdhani", sans-serif;
+          font-size: 18px;
+          font-weight: 400; }
+        body section .section-blog .container .col-lg-12 img {
+          width: 100%;
+          height: 480px;
+          margin-top: 32px;
+          border-radius: 16px;
+          object-fit: cover;
+          max-width: 100%; }
+  body section .section-blog-content {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding: 140px 80px;
+    background-color: #ffffff; }
+    body section .section-blog-content .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 720px; }
+      body section .section-blog-content .container .col-12 {
+        max-width: 88rem; }
+        body section .section-blog-content .container .col-12 .author-blog {
+          padding-bottom: 2.4rem;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; }
+          body section .section-blog-content .container .col-12 .author-blog img {
+            width: 56px;
+            height: 56px;
+            max-width: none;
+            border-radius: 50px;
+            margin-right: 16px; }
+          body section .section-blog-content .container .col-12 .author-blog .block-blog-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            color: #000000;
+            font-weight: 400; }
+            body section .section-blog-content .container .col-12 .author-blog .block-blog-details .text-blog-details {
+              font-size: 1.8rem; }
+            body section .section-blog-content .container .col-12 .author-blog .block-blog-details .divider-text {
+              margin-right: 8px;
+              margin-left: 8px; }
+        body section .section-blog-content .container .col-12 .body-text-blog {
+          color: #000000; }
+          body section .section-blog-content .container .col-12 .body-text-blog p {
+            color: #5b557f;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 24px;
+            line-height: 150%; }
+            body section .section-blog-content .container .col-12 .body-text-blog p a {
+              color: #5b35d5;
+              font-weight: 500; }
+          body section .section-blog-content .container .col-12 .body-text-blog ul {
+            padding: 0 3rem; }
+            body section .section-blog-content .container .col-12 .body-text-blog ul li {
+              color: #5b557f;
+              list-style-type: disc;
+              font-size: 2rem; }
+          body section .section-blog-content .container .col-12 .body-text-blog h2 {
+            text-align: left;
+            margin-top: 48px;
+            color: #322b5f;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 2.4rem; }

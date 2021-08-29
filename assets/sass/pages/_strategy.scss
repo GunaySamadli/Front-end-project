@@ -1,0 +1,155 @@
+body {
+    section {
+        padding: 0;
+        margin: 0;
+
+
+
+        .section-blog {
+            display: block;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+            padding: 8rem;
+            background-color: $color-bg-white;
+
+            .container {
+                @include flexbox(flex, center, center);
+                flex-direction: column;
+
+                .col-lg-12 {
+                    max-width: 88rem;
+
+                    h1 {
+                        position: static;
+                        max-width: 1440px;
+                        margin-top: 0;
+                        margin-bottom: 24px;
+                        align-self: flex-start;
+                        font-size: 56px;
+                        line-height: 120%;
+                        font-weight: 600;
+                        text-align: left;
+                        color: $color-primary;
+                    }
+
+                    .button {
+                        width: 26%;
+                        position: static;
+                        font-family: $font-family-rajdhani;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 480px;
+                        margin-top: 32px;
+                        border-radius: 16px;
+                        object-fit: cover;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .section-blog-content {
+            display: block;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+            padding: 140px 80px;
+            background-color: $color-white;
+
+            .container {
+                @include flexbox(flex, center, center);
+                max-width: 720px;
+
+                .col-12 {
+                    max-width: 88rem;
+
+                    .author-blog {
+                        padding-bottom: 2.4rem;
+                        @include flexbox(flex, flex-start, center);
+
+
+                        img {
+                            width: 56px;
+                            height: 56px;
+                            max-width: none;
+                            border-radius: 50px;
+                            margin-right: 16px;
+                        }
+
+                        .block-blog-details {
+                            @include flexbox();
+                            flex-direction: row;
+                            color: $color-black;
+                            font-weight: 400;
+
+
+                            .text-blog-details {
+                                font-size: 1.8rem;
+                            }
+
+                            .divider-text {
+                                margin-right: 8px;
+                                margin-left: 8px;
+                            }
+
+
+                        }
+
+
+                    }
+
+                    .body-text-blog {
+                        color: $color-black;
+
+                        p {
+                            color: $color-dark-gray;
+                            font-size: 18px;
+                            font-weight: 400;
+                            margin-top: 0;
+                            margin-bottom: 24px;
+                            line-height: 150%;
+
+                            a {
+                                color: $color-secondary;
+                                font-weight: 500;
+                            }
+                        }
+
+                        ul {
+                            padding: 0 3rem;
+
+                            li {
+                                color: $color-dark-gray;
+                                list-style-type: disc;
+                                font-size: 2rem;
+                            }
+                        }
+
+                        h2 {
+                            text-align: left;
+                            margin-top: 48px;
+                            color: #322b5f;
+                            font-weight: 600;
+                            font-size: 32px;
+                            line-height: 36px;
+                            margin-bottom: 2.4rem;
+                        }
+
+                    }
+
+
+                }
+            }
+
+        }
+
+
+
+
+    }
+}
