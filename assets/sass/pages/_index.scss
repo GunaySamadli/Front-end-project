@@ -11,12 +11,8 @@ body {
         background-color: $color-primary;
 
         .container {
-            position: relative;
-
 
             .row {
-
-
                 .custom-nav {
                     padding-top: 2rem;
                     @include flexbox(flex, space-between, center);
@@ -32,6 +28,8 @@ body {
                             ul {
                                 @include flexbox(flex, space-around, center);
 
+
+
                                 li {
                                     position: relative;
                                     white-space: nowrap;
@@ -43,19 +41,15 @@ body {
                                         padding: 1rem 1.5rem;
                                         font-size: 1.6rem;
 
-                                        &:hover {
-                                            background-color: $color-primary-hover
-                                        }
+
 
                                     }
 
-                                    a button {
-                                        &:hover {
-                                            border-style: solid;
-                                            border-color: #322b5f;
-                                            background-color: #1b1734;
-                                        }
+                                    &:hover:not():last-child {
+                                        background-color: $color-primary-hover
                                     }
+
+
 
                                     .drop-menu {
                                         @include flexbox(flex, space-around, flex-start);
@@ -126,6 +120,12 @@ body {
                                         }
                                     }
                                 }
+                            }
+
+                            .button:hover {
+                                white-space: nowrap;
+                                border-style: solid;
+                                background-color: none;
                             }
 
                         }

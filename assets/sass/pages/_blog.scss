@@ -1,0 +1,193 @@
+body {
+    background-color: $color-primary;
+
+
+    #blog {
+        .container {
+            .row {
+                .col-lg-12 {
+                    text-align: center;
+
+                    .heading {
+                        margin-top: 0;
+                        margin-bottom: 1.6rem;
+                        font-family: $font-family-rajdhani;
+                        color: $color-heading-orange;
+                        font-size: 1.8rem;
+                        line-height: 1.5;
+                        font-weight: 500;
+                        letter-spacing: 1.5px;
+                        text-transform: uppercase;
+                    }
+
+                    h1 {
+                        position: static;
+                        max-width: 144rem;
+                        margin-top: 0;
+                        margin-bottom: 1.6rem;
+                        align-self: center;
+                        font-family: $font-family-inter;
+                        font-size: 4.8rem;
+                        line-height: 120%;
+                        font-weight: 600;
+                    }
+                }
+
+                .blog-wrapper {
+                    width: 100%;
+                    margin-top: 80px;
+
+                    .col-lg-12 {
+
+                        .tabs-menu-blog {
+                            margin-bottom: 80px;
+                            margin-left: 16px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+
+                            a {
+                                margin-right: 16px;
+                                margin-bottom: 16px;
+                                white-space: nowrap;
+                            }
+
+                            .button-blog.active {
+                                border-color: #66e7d8;
+                                background-color: #0f0d1e;
+                            }
+                        }
+                    }
+
+                    .col-lg-6 {
+                        padding-right: 2.4rem;
+                        padding-left: 2.4rem;
+                        position: relative;
+                        float: left;
+                        min-height: 1px;
+                        padding-bottom: 4rem;
+
+                        .card-blog-post {
+                            position: relative;
+                            overflow: hidden;
+                            background-color: $color-primary-hover;
+                            border-radius: 1.6rem;
+                            justify-content: flex-start;
+                            border-bottom: 1px transparent;
+
+
+                            .col-5 {
+                                width: 100%;
+
+                                .card-blog-post-image {
+                                    overflow: hidden;
+                                    height: 24rem;
+                                    background-image: none;
+                                    position: relative;
+                                    z-index: 1;
+
+
+                                    img {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        width: 100%;
+                                        min-height: 100%;
+                                        border-radius: 1rem;
+                                        -o-object-fit: cover;
+                                        object-fit: cover;
+                                        vertical-align: middle;
+                                        display: inline-block;
+                                        max-width: 100%;
+                                        padding-top: 0;
+                                        padding-bottom: 0;
+                                        border: 1px transparent;
+                                    }
+
+                                    .button-demo {
+                                        position: absolute;
+                                        left: 16px;
+                                        top: auto;
+                                        right: auto;
+                                        bottom: 16px;
+                                        display: block;
+                                        padding: 4px 8px;
+                                        clear: none;
+                                    }
+                                }
+                            }
+
+                            .col-7 {
+                                width: 100%;
+
+                                .card-blog-post-content {
+                                    h2 {
+                                        margin-top: 32px;
+                                        padding-right: 32px;
+                                        padding-left: 32px;
+                                        font-size: 20px;
+                                        line-height: 150%;
+                                        font-weight: 500;
+                                        text-align: left;
+                                        margin-bottom: 1.6rem;
+                                    }
+
+                                    p {
+                                        padding-right: 5rem;
+                                        padding-left: 3.2rem;
+                                        font-size: 16px;
+                                        color: $color-gray;
+                                        margin-bottom: 2.4rem;
+                                        line-height: 150%;
+                                        font-weight: 300;
+                                    }
+
+                                    .div-date {
+                                        padding-right: 32px;
+                                        padding-left: 32px;
+                                        padding-bottom: 48px;
+                                        color: $color-gray;
+                                        display: flex;
+                                        align-items: center;
+
+                                        img {
+                                            padding-right: 1rem;
+                                        }
+
+                                        .text-block {
+                                            font-size: 1.6rem;
+                                        }
+                                    }
+
+                                    .div-date.third {
+                                        padding-bottom: 10rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            transform: translate(0, -4px);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+}
+
+
+@media only screen and (max-width:992px) {
+    body {}
+
+}
+
+@media only screen and (max-width:768) {}
+
+@media only screen and (max-width:576px) {}

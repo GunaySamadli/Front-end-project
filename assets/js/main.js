@@ -1,4 +1,5 @@
 
+
 $(document).ready(function () {
     $('.icon-circle-right').on('click', function (e) {
         e.preventDefault();
@@ -18,6 +19,8 @@ $(document).ready(function () {
     //     $('.lists').slideToggle();
     // })
 });
+
+
 
 
 // let ellipsis = document.querySelector("header .icons .ellipsis");
@@ -54,7 +57,7 @@ $(document).ready(function () {
 
 
 
-// blog section
+// blog section homepage
 
 const tabTestimonials = Array.from(document.querySelectorAll(" .tab-testimonial"));
 const tabContents = Array.from(document.querySelectorAll(".content-testimonials .content-testimonial"));
@@ -80,6 +83,15 @@ tabTestimonials.forEach(tabTestimonial => {
     }
 })
 
+
+// Blog
+
+
+
+$(".button-blog").on("click", function () {
+    $(".button-blog").removeClass("active");
+    $(this).addClass("active");
+});
 
 
 // Modal
