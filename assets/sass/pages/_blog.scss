@@ -184,7 +184,55 @@ body {
 
 
 @media only screen and (max-width:992px) {
-    body {}
+    body {
+        #blog {
+            .blog-wrapper {
+                .blog-contents {
+                    .blog-content {
+                        .col-lg-6 {
+                            padding-right: 0;
+                            padding-left: 0;
+                            position: relative;
+                            float: left;
+                            min-height: 1px;
+                            padding-bottom: 4rem;
+
+                            .card-blog-post {
+                                @include flexbox();
+
+
+                                .col-5 {
+                                    width: 40%;
+                                    padding-left: 1rem;
+
+
+                                }
+
+                                .col-7 {
+                                    width: 60%;
+
+                                    .card-blog-post-content {
+                                        h2 {
+                                            text-align: left;
+                                            margin-bottom: 1.6rem;
+                                        }
+
+
+
+
+
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
 
 }
 

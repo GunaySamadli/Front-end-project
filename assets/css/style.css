@@ -6874,21 +6874,65 @@ body {
           white-space: nowrap;
           border-style: solid;
           background-color: none; }
-      body header .container .row .custom-nav .icon-menu {
+      body header .container .row .custom-nav .openMenu {
         display: none; }
     body header .container .row .custom-responsive-nav {
       position: absolute;
       z-index: 999999;
-      width: 100%; }
-      body header .container .row .custom-responsive-nav nav .container-fluid, body header .container .row .custom-responsive-nav nav .container-sm, body header .container .row .custom-responsive-nav nav .container-md, body header .container .row .custom-responsive-nav nav .container-lg, body header .container .row .custom-responsive-nav nav .container-xl, body header .container .row .custom-responsive-nav nav .container-xxl {
-        list-style: none;
-        padding: 0;
-        background-color: #ffffff; }
-        body header .container .row .custom-responsive-nav nav .container-fluid ul li a, body header .container .row .custom-responsive-nav nav .container-sm ul li a, body header .container .row .custom-responsive-nav nav .container-md ul li a, body header .container .row .custom-responsive-nav nav .container-lg ul li a, body header .container .row .custom-responsive-nav nav .container-xl ul li a, body header .container .row .custom-responsive-nav nav .container-xxl ul li a {
-          font-size: 2rem;
-          list-style: none;
-          padding: 0;
-          background-color: #ffffff; }
+      width: 70%;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s linear; }
+      body header .container .row .custom-responsive-nav nav {
+        background-color: #1b1734 !important;
+        color: #ffffff;
+        height: 100vh; }
+        body header .container .row .custom-responsive-nav nav .container-fluid .navbar li, body header .container .row .custom-responsive-nav nav .container-sm .navbar li, body header .container .row .custom-responsive-nav nav .container-md .navbar li, body header .container .row .custom-responsive-nav nav .container-lg .navbar li, body header .container .row .custom-responsive-nav nav .container-xl .navbar li, body header .container .row .custom-responsive-nav nav .container-xxl .navbar li {
+          display: flex;
+          justify-content: space-between; }
+          body header .container .row .custom-responsive-nav nav .container-fluid .navbar li a, body header .container .row .custom-responsive-nav nav .container-sm .navbar li a, body header .container .row .custom-responsive-nav nav .container-md .navbar li a, body header .container .row .custom-responsive-nav nav .container-lg .navbar li a, body header .container .row .custom-responsive-nav nav .container-xl .navbar li a, body header .container .row .custom-responsive-nav nav .container-xxl .navbar li a {
+            white-space: nowrap;
+            padding: 1rem 1.5rem;
+            font-size: 1.6rem; }
+          body header .container .row .custom-responsive-nav nav .container-fluid .navbar li i, body header .container .row .custom-responsive-nav nav .container-sm .navbar li i, body header .container .row .custom-responsive-nav nav .container-md .navbar li i, body header .container .row .custom-responsive-nav nav .container-lg .navbar li i, body header .container .row .custom-responsive-nav nav .container-xl .navbar li i, body header .container .row .custom-responsive-nav nav .container-xxl .navbar li i {
+            padding-top: 2rem;
+            font-size: 2rem; }
+          body header .container .row .custom-responsive-nav nav .container-fluid .navbar li .drop-menu, body header .container .row .custom-responsive-nav nav .container-sm .navbar li .drop-menu, body header .container .row .custom-responsive-nav nav .container-md .navbar li .drop-menu, body header .container .row .custom-responsive-nav nav .container-lg .navbar li .drop-menu, body header .container .row .custom-responsive-nav nav .container-xl .navbar li .drop-menu, body header .container .row .custom-responsive-nav nav .container-xxl .navbar li .drop-menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: column;
+            overflow: auto;
+            max-height: 85vh;
+            margin-top: 8px;
+            padding: 0 16px;
+            border: 1px solid #dedcee;
+            border-radius: 8px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            background-color: #ffffff;
+            text-align: left;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            top: 180%;
+            padding: 10px;
+            display: none; }
+            body header .container .row .custom-responsive-nav nav .container-fluid .navbar li .drop-menu .nav-item a, body header .container .row .custom-responsive-nav nav .container-sm .navbar li .drop-menu .nav-item a, body header .container .row .custom-responsive-nav nav .container-md .navbar li .drop-menu .nav-item a, body header .container .row .custom-responsive-nav nav .container-lg .navbar li .drop-menu .nav-item a, body header .container .row .custom-responsive-nav nav .container-xl .navbar li .drop-menu .nav-item a, body header .container .row .custom-responsive-nav nav .container-xxl .navbar li .drop-menu .nav-item a {
+              padding: 10px 20px;
+              display: block;
+              color: #222;
+              font-size: 1.6rem; }
+              body header .container .row .custom-responsive-nav nav .container-fluid .navbar li .drop-menu .nav-item a:hover, body header .container .row .custom-responsive-nav nav .container-sm .navbar li .drop-menu .nav-item a:hover, body header .container .row .custom-responsive-nav nav .container-md .navbar li .drop-menu .nav-item a:hover, body header .container .row .custom-responsive-nav nav .container-lg .navbar li .drop-menu .nav-item a:hover, body header .container .row .custom-responsive-nav nav .container-xl .navbar li .drop-menu .nav-item a:hover, body header .container .row .custom-responsive-nav nav .container-xxl .navbar li .drop-menu .nav-item a:hover {
+                color: #5b35d5; }
+            body header .container .row .custom-responsive-nav nav .container-fluid .navbar li .drop-menu .nav-item ul, body header .container .row .custom-responsive-nav nav .container-sm .navbar li .drop-menu .nav-item ul, body header .container .row .custom-responsive-nav nav .container-md .navbar li .drop-menu .nav-item ul, body header .container .row .custom-responsive-nav nav .container-lg .navbar li .drop-menu .nav-item ul, body header .container .row .custom-responsive-nav nav .container-xl .navbar li .drop-menu .nav-item ul, body header .container .row .custom-responsive-nav nav .container-xxl .navbar li .drop-menu .nav-item ul {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start; }
+        body header .container .row .custom-responsive-nav nav .container-fluid .buttons, body header .container .row .custom-responsive-nav nav .container-sm .buttons, body header .container .row .custom-responsive-nav nav .container-md .buttons, body header .container .row .custom-responsive-nav nav .container-lg .buttons, body header .container .row .custom-responsive-nav nav .container-xl .buttons, body header .container .row .custom-responsive-nav nav .container-xxl .buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
     body header .hero {
       padding: 120px 16px 120px 48px; }
       body header .hero .col-lg-6 h1 {
@@ -7330,26 +7374,38 @@ body {
       background-color: #5b35d5; }
 
 @media only screen and (max-width: 992px) {
-  body header .container .custom-nav {
+  body header .custom-nav {
     padding-top: 16px;
     padding-bottom: 16px; }
-    body header .container .custom-nav nav {
+    body header .custom-nav nav {
       display: none; }
-      body header .container .custom-nav nav .container-fluid, body header .container .custom-nav nav .container-sm, body header .container .custom-nav nav .container-md, body header .container .custom-nav nav .container-lg, body header .container .custom-nav nav .container-xl, body header .container .custom-nav nav .container-xxl {
+      body header .custom-nav nav .container-fluid, body header .custom-nav nav .container-sm, body header .custom-nav nav .container-md, body header .custom-nav nav .container-lg, body header .custom-nav nav .container-xl, body header .custom-nav nav .container-xxl {
         display: flex;
         justify-content: space-between;
         align-items: center; }
-        body header .container .custom-nav nav .container-fluid .navbar, body header .container .custom-nav nav .container-sm .navbar, body header .container .custom-nav nav .container-md .navbar, body header .container .custom-nav nav .container-lg .navbar, body header .container .custom-nav nav .container-xl .navbar, body header .container .custom-nav nav .container-xxl .navbar {
+        body header .custom-nav nav .container-fluid .navbar, body header .custom-nav nav .container-sm .navbar, body header .custom-nav nav .container-md .navbar, body header .custom-nav nav .container-lg .navbar, body header .custom-nav nav .container-xl .navbar, body header .custom-nav nav .container-xxl .navbar {
           display: flex;
           justify-content: space-around;
-          align-items: center; }
-          body header .container .custom-nav nav .container-fluid .navbar li, body header .container .custom-nav nav .container-sm .navbar li, body header .container .custom-nav nav .container-md .navbar li, body header .container .custom-nav nav .container-lg .navbar li, body header .container .custom-nav nav .container-xl .navbar li, body header .container .custom-nav nav .container-xxl .navbar li {
+          align-items: center;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 10;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #000;
+          transition: top 1s ease;
+          display: none; }
+          body header .custom-nav nav .container-fluid .navbar li, body header .custom-nav nav .container-sm .navbar li, body header .custom-nav nav .container-md .navbar li, body header .custom-nav nav .container-lg .navbar li, body header .custom-nav nav .container-xl .navbar li, body header .custom-nav nav .container-xxl .navbar li {
             position: relative; }
-            body header .container .custom-nav nav .container-fluid .navbar li a, body header .container .custom-nav nav .container-sm .navbar li a, body header .container .custom-nav nav .container-md .navbar li a, body header .container .custom-nav nav .container-lg .navbar li a, body header .container .custom-nav nav .container-xl .navbar li a, body header .container .custom-nav nav .container-xxl .navbar li a {
+            body header .custom-nav nav .container-fluid .navbar li a, body header .custom-nav nav .container-sm .navbar li a, body header .custom-nav nav .container-md .navbar li a, body header .custom-nav nav .container-lg .navbar li a, body header .custom-nav nav .container-xl .navbar li a, body header .custom-nav nav .container-xxl .navbar li a {
               white-space: nowrap;
               padding: 1rem 1.5rem;
               font-size: 1.6rem; }
-            body header .container .custom-nav nav .container-fluid .navbar li .drop-menu, body header .container .custom-nav nav .container-sm .navbar li .drop-menu, body header .container .custom-nav nav .container-md .navbar li .drop-menu, body header .container .custom-nav nav .container-lg .navbar li .drop-menu, body header .container .custom-nav nav .container-xl .navbar li .drop-menu, body header .container .custom-nav nav .container-xxl .navbar li .drop-menu {
+            body header .custom-nav nav .container-fluid .navbar li .drop-menu, body header .custom-nav nav .container-sm .navbar li .drop-menu, body header .custom-nav nav .container-md .navbar li .drop-menu, body header .custom-nav nav .container-lg .navbar li .drop-menu, body header .custom-nav nav .container-xl .navbar li .drop-menu, body header .custom-nav nav .container-xxl .navbar li .drop-menu {
               display: flex;
               justify-content: space-around;
               align-items: flex-start;
@@ -7370,19 +7426,19 @@ body {
               top: 180%;
               padding: 10px;
               display: none; }
-              body header .container .custom-nav nav .container-fluid .navbar li .drop-menu .nav-item a, body header .container .custom-nav nav .container-sm .navbar li .drop-menu .nav-item a, body header .container .custom-nav nav .container-md .navbar li .drop-menu .nav-item a, body header .container .custom-nav nav .container-lg .navbar li .drop-menu .nav-item a, body header .container .custom-nav nav .container-xl .navbar li .drop-menu .nav-item a, body header .container .custom-nav nav .container-xxl .navbar li .drop-menu .nav-item a {
+              body header .custom-nav nav .container-fluid .navbar li .drop-menu .nav-item a, body header .custom-nav nav .container-sm .navbar li .drop-menu .nav-item a, body header .custom-nav nav .container-md .navbar li .drop-menu .nav-item a, body header .custom-nav nav .container-lg .navbar li .drop-menu .nav-item a, body header .custom-nav nav .container-xl .navbar li .drop-menu .nav-item a, body header .custom-nav nav .container-xxl .navbar li .drop-menu .nav-item a {
                 padding: 10px 20px;
                 display: block;
                 color: #222;
                 font-size: 1.6rem; }
-                body header .container .custom-nav nav .container-fluid .navbar li .drop-menu .nav-item a:hover, body header .container .custom-nav nav .container-sm .navbar li .drop-menu .nav-item a:hover, body header .container .custom-nav nav .container-md .navbar li .drop-menu .nav-item a:hover, body header .container .custom-nav nav .container-lg .navbar li .drop-menu .nav-item a:hover, body header .container .custom-nav nav .container-xl .navbar li .drop-menu .nav-item a:hover, body header .container .custom-nav nav .container-xxl .navbar li .drop-menu .nav-item a:hover {
+                body header .custom-nav nav .container-fluid .navbar li .drop-menu .nav-item a:hover, body header .custom-nav nav .container-sm .navbar li .drop-menu .nav-item a:hover, body header .custom-nav nav .container-md .navbar li .drop-menu .nav-item a:hover, body header .custom-nav nav .container-lg .navbar li .drop-menu .nav-item a:hover, body header .custom-nav nav .container-xl .navbar li .drop-menu .nav-item a:hover, body header .custom-nav nav .container-xxl .navbar li .drop-menu .nav-item a:hover {
                   color: #5b35d5; }
-              body header .container .custom-nav nav .container-fluid .navbar li .drop-menu .nav-item ul, body header .container .custom-nav nav .container-sm .navbar li .drop-menu .nav-item ul, body header .container .custom-nav nav .container-md .navbar li .drop-menu .nav-item ul, body header .container .custom-nav nav .container-lg .navbar li .drop-menu .nav-item ul, body header .container .custom-nav nav .container-xl .navbar li .drop-menu .nav-item ul, body header .container .custom-nav nav .container-xxl .navbar li .drop-menu .nav-item ul {
+              body header .custom-nav nav .container-fluid .navbar li .drop-menu .nav-item ul, body header .custom-nav nav .container-sm .navbar li .drop-menu .nav-item ul, body header .custom-nav nav .container-md .navbar li .drop-menu .nav-item ul, body header .custom-nav nav .container-lg .navbar li .drop-menu .nav-item ul, body header .custom-nav nav .container-xl .navbar li .drop-menu .nav-item ul, body header .custom-nav nav .container-xxl .navbar li .drop-menu .nav-item ul {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start; }
-    body header .container .custom-nav .icon-menu {
-      display: block;
+    body header .custom-nav .openMenu {
+      display: block !important;
       font-size: 2.2rem; }
   body header .hero {
     padding: 120px 16px 120px 48px; }
@@ -7833,3 +7889,24 @@ body {
             padding-bottom: 10rem; }
       body #blog .container .row .blog-wrapper .col-lg-6:hover {
         transform: translate(0, -4px); }
+
+@media only screen and (max-width: 992px) {
+  body #blog .blog-wrapper .blog-contents .blog-content .col-lg-6 {
+    padding-right: 0;
+    padding-left: 0;
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-bottom: 4rem; }
+    body #blog .blog-wrapper .blog-contents .blog-content .col-lg-6 .card-blog-post {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      body #blog .blog-wrapper .blog-contents .blog-content .col-lg-6 .card-blog-post .col-5 {
+        width: 40%;
+        padding-left: 1rem; }
+      body #blog .blog-wrapper .blog-contents .blog-content .col-lg-6 .card-blog-post .col-7 {
+        width: 60%; }
+        body #blog .blog-wrapper .blog-contents .blog-content .col-lg-6 .card-blog-post .col-7 .card-blog-post-content h2 {
+          text-align: left;
+          margin-bottom: 1.6rem; } }
