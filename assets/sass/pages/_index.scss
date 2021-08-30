@@ -1711,6 +1711,39 @@ body {
                     .col-lg-7 {
                         margin: 0 auto;
 
+                        .col-4 {
+                            .tab-testimonial {
+                                display: flex;
+                                flex-direction: column;
+
+
+                                img {
+                                    height: 6rem;
+                                    margin-right: 1.4rem;
+                                    border-radius: 0;
+                                }
+
+                                .text-box-header {
+                                    font-size: 1.8rem;
+                                    font-weight: 500;
+                                }
+
+                                .text-box-footer {
+                                    font-size: 1.6rem;
+                                }
+
+
+
+
+                            }
+
+                            .tab-testimonial.active {
+                                border-style: none none solid;
+                                border-color: #5b35d5 #5b35d5 #ff9a83;
+                                background-color: transparent;
+                                opacity: 1;
+                            }
+                        }
                     }
                 }
             }

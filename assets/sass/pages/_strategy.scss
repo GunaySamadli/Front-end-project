@@ -1,7 +1,13 @@
 body {
+
+    header {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
     section {
         padding: 0;
-        margin: 0;
+        margin-top: 8rem;
 
 
 
@@ -151,5 +157,96 @@ body {
 
 
 
+    }
+}
+
+
+@media only screen and (max-width:576px) {
+    body {
+
+        header {
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+
+        section {
+            padding: 0;
+            margin-top: 8rem;
+
+
+
+            .section-blog {
+                display: block;
+                margin-right: auto;
+                margin-bottom: 0;
+                margin-left: auto;
+                padding: 8rem;
+                background-color: $color-bg-white;
+
+                .container {
+                    @include flexbox(flex, center, center);
+                    flex-direction: column;
+
+                    .col-lg-12 {
+                        max-width: 88rem;
+
+                        .button {
+                            width: 75% !important;
+                            position: static;
+                            font-family: $font-family-rajdhani;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+
+                    }
+                }
+            }
+
+            .section-blog-content {
+                display: block;
+                margin-right: auto;
+                margin-bottom: 0;
+                margin-left: auto;
+                padding: 60px 24px;
+                background-color: $color-white;
+
+                .container {
+                    @include flexbox(flex, center, center);
+                    max-width: 720px;
+
+                    .col-12 {
+
+                        .author-blog {
+
+                            .block-blog-details {
+                                @include flexbox();
+                                flex-direction: column;
+
+
+                                .text-blog-details {
+                                    font-size: 1.8rem;
+                                }
+
+                                .divider-text {
+                                    margin-right: 8px;
+                                    margin-left: 8px;
+                                }
+
+
+                            }
+
+
+                        }
+
+
+                    }
+                }
+
+            }
+
+
+
+
+        }
     }
 }
