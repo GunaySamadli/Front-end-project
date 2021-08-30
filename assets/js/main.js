@@ -74,6 +74,36 @@ tabTestimonials.forEach(tabTestimonial => {
 })
 
 
+// filter section
+
+
+const btnTestimonials = Array.from(document.querySelectorAll(" .button-testimonials .button-testimonial "));
+const btnContents = Array.from(document.querySelectorAll(".button-contents .button-content"));
+
+const clearActive = function () {
+    btnTestimonials.forEach(btnTestimonial => {
+        btnTestimonial.classList.remove("active");
+    });
+    btnContents.forEach(btnContent => {
+        btnContent.classList.remove("active");
+    });
+}
+
+
+
+btnTestimonials.forEach(btnTestimonial => {
+    btnTestimonial.onclick = function () {
+        clearActive();
+        const btnId = btnTestimonial.getAttribute("data-btn");
+        const btnContent = document.getElementById(btnId);
+        btnTestimonial.classList.add("active");
+        btnContent.classList.add("active")
+    }
+})
+
+
+
+
 
 
 $(document).ready(function () {

@@ -7214,6 +7214,7 @@ body {
           visibility: hidden;
           position: absolute;
           width: 100%;
+          height: 100%;
           background-color: #ffffff;
           border-bottom-left-radius: 10px;
           border-bottom-right-radius: 10px; }
@@ -8782,3 +8783,206 @@ body section {
           body section .section-blog-content .container .col-12 .author-blog .block-blog-details .divider-text {
             margin-right: 8px;
             margin-left: 8px; } }
+
+body .header {
+  padding: 140px 80px; }
+  body .header .col-lg-12 .info h1 {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    max-width: 700px;
+    margin-bottom: 24px; }
+  body .header .col-lg-12 .info p {
+    color: #adaabf;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 3.4rem;
+    font-weight: 300;
+    max-width: 470px; }
+  body .header .col-lg-12 .info-button .button-log {
+    margin-left: 16px; }
+
+body .new {
+  background-color: #1b1734;
+  padding: 80px 48px; }
+  body .new h5 {
+    margin-bottom: 40px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: rgba(91, 53, 213, 0.2);
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    width: max-content; }
+  body .new .col-lg-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px; }
+    body .new .col-lg-12 h3 {
+      font-size: 33px;
+      line-height: 40px;
+      font-weight: 600;
+      text-align: left; }
+    body .new .col-lg-12 p {
+      font-size: 14px;
+      line-height: 20px;
+      width: 48%;
+      font-weight: 300; }
+
+body .filter {
+  padding: 14rem 8rem; }
+  body .filter .filter-info h2 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center; }
+  body .filter .filter-info p {
+    text-align: center !important;
+    margin-bottom: 80px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #adaabf; }
+  body .filter .button-testimonials {
+    display: flex;
+    flex-direction: row;
+    padding-left: 4.6rem; }
+    body .filter .button-testimonials .button-testimonial.active .button {
+      border-color: #66e7d8;
+      background-color: #0f0d1e; }
+  body .filter .container.footer {
+    max-width: 1220rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    border-radius: 1.6rem; }
+    body .filter .container.footer .row {
+      max-width: 1220rem;
+      padding-top: 4.8rem;
+      padding-bottom: 4rem;
+      border-radius: 1.6rem;
+      background-color: #1b1734;
+      height: 50rem;
+      text-align: center; }
+      body .filter .container.footer .row .button-contents {
+        position: relative; }
+        body .filter .container.footer .row .button-contents .button-content {
+          visibility: hidden;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          body .filter .container.footer .row .button-contents .button-content .col-md-6 {
+            font-family: var(--bs-font-sans-serif); }
+            body .filter .container.footer .row .button-contents .button-content .col-md-6 .heading {
+              font-size: 4rem;
+              line-height: 130%;
+              font-weight: 600;
+              text-align: left;
+              padding: 0 2.4rem;
+              margin-top: 5rem;
+              margin-bottom: 2rem; }
+            body .filter .container.footer .row .button-contents .button-content .col-md-6 .paragraph {
+              text-align: left;
+              padding: 0 2.4rem;
+              font-size: 1.8rem;
+              font-weight: 300;
+              margin-top: 0;
+              margin-bottom: 2.4rem;
+              line-height: 150%; }
+            body .filter .container.footer .row .button-contents .button-content .col-md-6 .link {
+              padding: 0 2.4rem;
+              font-size: 1.6rem;
+              text-align: left; }
+              body .filter .container.footer .row .button-contents .button-content .col-md-6 .link a {
+                text-decoration: underline;
+                padding-right: 1rem; }
+          body .filter .container.footer .row .button-contents .button-content .col-md-6 img {
+            width: 80%;
+            margin: -20 auto; }
+        body .filter .container.footer .row .button-contents .button-content.active {
+          visibility: visible; }
+
+body .benefits {
+  padding: 14rem 8rem;
+  background-color: #1b1734; }
+  body .benefits h5 {
+    margin-bottom: 40px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: rgba(91, 53, 213, 0.2);
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    width: max-content; }
+  body .benefits h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 2rem; }
+  body .benefits .col-lg-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    body .benefits .col-lg-12 .benefit-item {
+      display: flex;
+      margin-bottom: 16px;
+      padding-left: 32px;
+      font-size: 14px;
+      line-height: 20px;
+      width: 45%; }
+  body .benefits .button-contact {
+    padding: 3rem; }
+
+body .benefits.seconds {
+  background-color: #0f0d1e; }
+  body .benefits.seconds .button-contact .button {
+    background-color: #0f0d1e;
+    border-color: #ffffff; }
+  body .benefits.seconds .col-12 {
+    background-color: #5b35d5;
+    max-width: 1220rem;
+    padding-top: 10rem;
+    padding: 5rem;
+    border-radius: 1.6rem; }
+    body .benefits.seconds .col-12 h5 {
+      border: 1px solid #ffffff; }
+    body .benefits.seconds .col-12 a {
+      background-color: #0f0d1e; }
+
+body .contact {
+  padding: 14rem 8rem; }
+  body .contact .contact-form {
+    background-color: #ffffff;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px; }
+    body .contact .contact-form h2 {
+      color: #0f0d1e; }
+    body .contact .contact-form form {
+      display: flex;
+      width: 100%;
+      padding: 40px;
+      flex-direction: column;
+      border-radius: 16px; }
+
+body .faq {
+  padding: 14rem 8rem;
+  background-color: #1b1734; }
+  body .faq h2 {
+    font-size: 30px;
+    line-height: 40px; }
+  body .faq h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 3rem; }
