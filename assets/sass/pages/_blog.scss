@@ -1,6 +1,9 @@
 body {
     background-color: $color-primary;
 
+    header {
+        padding-bottom: 20rem;
+    }
 
     #blog {
         .container {
@@ -239,3 +242,83 @@ body {
 @media only screen and (max-width:768) {}
 
 @media only screen and (max-width:576px) {}
+
+@media only screen and (max-width:328px) {
+    body {
+        background-color: $color-primary;
+
+        header {
+            padding-bottom: 20rem;
+        }
+
+        #blog {
+            padding: 60px 10px;
+
+            .container {
+                .row {
+                    .col-lg-12 {
+                        text-align: center;
+
+                        .heading {
+                            font-size: 1.8rem;
+                        }
+
+                    }
+
+                    .blog-wrapper {
+                        width: 100%;
+                        margin-top: 80px;
+
+                        .col-lg-12 {
+
+                            .tabs-menu-blog {
+                                margin-bottom: 80px;
+                                margin-left: 16px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: center;
+
+                                a {
+                                    margin-right: 16px;
+                                    margin-bottom: 16px;
+                                    white-space: nowrap;
+                                }
+
+                                .button-blog.active {
+                                    border-color: #66e7d8;
+                                    background-color: #0f0d1e;
+                                }
+                            }
+                        }
+
+                        .col-lg-6 {
+
+                            .card-blog-post {
+                                display: flex;
+
+                                flex-direction: column;
+
+
+                                .col-5 {
+                                    width: 100%;
+                                }
+
+                                .col-7 {
+                                    width: 100%;
+                                }
+                            }
+
+                            &:hover {
+                                transform: translate(0, -4px);
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+
+    }
+}
