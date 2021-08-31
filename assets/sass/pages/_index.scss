@@ -1689,6 +1689,11 @@ body {
                 }
             }
         }
+
+        .section-action {
+            padding: 0 !important;
+
+        }
     }
 }
 
@@ -1791,6 +1796,11 @@ body {
                     }
                 }
             }
+        }
+
+        .section-action {
+            padding: 0 !important;
+
         }
 
         footer {
@@ -2590,7 +2600,7 @@ body {
         }
 
         footer {
-            padding: 80px 48px;
+            padding: 4rem 2.4rem;
 
             .container {
                 margin-bottom: 4rem;
