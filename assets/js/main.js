@@ -124,23 +124,24 @@ $(document).ready(function () {
 
 
 
-const Play = document.querySelector(".image .link-watch-video");
-const Close = document.querySelector("#close");
-const Modal = document.querySelector(".modal");
+// Accordion
 
-Play.addEventListener("click", (e) => {
-    e.preventDefault();
-    Modal.classList.add("show")
+$(document).ready(function () {
+    $('.faq-accordion').on('click', function (e) {
+        e.preventDefault();
+        if ($(this).next('.accordion-content').css('display') == 'none') {
+            $(this).find('img').css('transform', 'rotate(90deg)');
+        }
+        else {
+            $(this).find('img').css('transform', 'rotate(0deg)');
+        }
+
+        $(this).next('.accordion-content').slideToggle();
+    })
+});
+$(document).ready(function () {
+    AOS.init({
+        duration: 1200,
+    });
 });
 
-Close.addEventListener("click", () => {
-    Modal.classList.remove("show");
-    var iframes = Modal.getElementsByClassName('.iframe-container img');
-    if (iframes != null) {
-        for (let i = 0; i < iframes.length; i++) {
-            const iframe = iframes[i];
-            iframe.src = iframe.src;
-
-        }
-    }
-})
