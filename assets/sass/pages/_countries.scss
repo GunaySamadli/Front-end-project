@@ -8,6 +8,19 @@ body {
             color: $color-gray;
             font-size: 20px;
 
+
+
+        }
+
+        .col-lg-6 {
+            img {
+                max-width: 100%;
+
+                @media screen and (max-width:992px) {
+                    display: none;
+                }
+            }
+
         }
     }
 

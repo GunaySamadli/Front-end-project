@@ -139,6 +139,9 @@ $(document).ready(function () {
         $(this).next('.accordion-content').slideToggle();
     })
 });
+
+
+
 $(document).ready(function () {
     AOS.init({
         duration: 1200,

@@ -11,6 +11,7 @@
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+
 }
 
 .button.button-log {
@@ -19,6 +20,12 @@
     font-weight: 300;
     white-space: nowrap;
     margin-right: 1.6rem;
+
+    &:hover {
+        border-style: solid;
+        border-color: #322b5f;
+        background-color: #1b1734;
+    }
 }
 
 .button-demo {
@@ -30,6 +37,10 @@
     text-align: center;
     cursor: pointer;
     border: 1px solid transparent;
+
+    &:hover {
+        background-color: #7460ef;
+    }
 }
 
 .button-blog {
