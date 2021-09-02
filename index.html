@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <header>
     <div class="container navbar">
       <div class="row">
@@ -24,14 +25,8 @@
                 <ul class="navbar">
                   <li class="nav-item dropdown">
                     <a class="nav-link" href="">How it Works <span class="icon-circle-right-wrapper">
-                        <svg fill="white" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                          viewBox="0 0 32 32">
-                          <title>circle-right</title>
-                          <path
-                            d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z">
-                          </path>
-                          <path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>
-                        </svg>
+                        <img class="down-icon" src="./assets/images/arrow-down-sign-to-navigate.svg" alt="">
+
                       </span></a>
                     <ul class="drop-menu" id="drop-1">
                       <li class="nav-item"><a href="">Global Employment</a></li>
@@ -46,14 +41,7 @@
                   <li class="nav-item dropdown">
                     <a class="nav-link" href="">Resources
                       <span class="icon-circle-right-wrapper">
-                        <svg fill="white" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                          viewBox="0 0 32 32">
-                          <title>circle-right</title>
-                          <path
-                            d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z">
-                          </path>
-                          <path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>
-                        </svg>
+                        <img class="down-icon" src="./assets/images/arrow-down-sign-to-navigate.svg" alt="">
                       </span>
                     </a>
                     <ul class="drop-menu " id="drop-2">
@@ -105,14 +93,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link active" href="">How it Works
                 <span class="icon-circle-right-wrapper">
-                  <svg fill="white" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                    viewBox="0 0 32 32">
-                    <title>circle-right</title>
-                    <path
-                      d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z">
-                    </path>
-                    <path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>
-                  </svg>
+                  <img class="down-icon" src="./assets/images/arrow-down-sign-to-navigate.svg" alt="">
                 </span>
               </a>
 
@@ -129,14 +110,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link active" href="">Resources
                 <span class="icon-circle-right-wrapper">
-                  <svg fill="white" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                    viewBox="0 0 32 32">
-                    <title>circle-right</title>
-                    <path
-                      d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z">
-                    </path>
-                    <path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>
-                  </svg>
+                  <img class="down-icon" src="./assets/images/arrow-down-sign-to-navigate.svg" alt="">
                 </span>
               </a>
 
@@ -183,7 +157,7 @@
             <h1 class="heading-hero-homepage">Automated global payroll and compliance for remote teams</h1>
             <p class="subheading-hero-homepage">Panther puts global payroll, benefits, taxes, and local compliance on
               auto-pilot, without you having to set up a subsidiary.</p>
-            <button class="button-demo">Book a demo</button>
+            <button class="button button-demo">Book a demo</button>
             <div class="container-trust-hero">
               <div class="paragraph">Trusted by</div>
               <div class="container-trust-logos">
@@ -205,6 +179,7 @@
             <div class="image">
               <img src="./assets/images/hero.png" alt="">
               <a class="link-watch-video" href="">
+                <img src="./assets/images/play-icon.svg" alt="">
               </a>
             </div>
             <div class="modal">
@@ -630,7 +605,9 @@
         </div>
       </div>
     </div>
-    <a href="#" class="backtotop btn btn-primary"></a>
+    <a href="#" class="backtotop btn btn-primary">
+      <img src="./assets/images/up.svg" alt="">
+    </a>
   </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -642,13 +619,19 @@
   const Play = document.querySelector(".image .link-watch-video");
   const Close = document.querySelector("#close");
   const Modal = document.querySelector(".modal");
+  const Navnormal = document.querySelector(".navbar");
 
   Play.addEventListener("click", (e) => {
+    Navnormal.style.display = 'none';
     e.preventDefault();
-    Modal.classList.add("show")
+    Modal.classList.add("show");
   });
 
   Close.addEventListener("click", () => {
+
+    Navnormal.style.display = 'block';
+
+
     Modal.classList.remove("show");
     var iframes = Modal.getElementsByClassName('.iframe-container img');
     if (iframes != null) {

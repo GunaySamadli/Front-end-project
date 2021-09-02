@@ -21,7 +21,15 @@ body {
                     @include flexbox(flex, space-between, center);
                     width: 100%;
                     left: 0;
-                    padding: 0 20px;
+                    padding: 20px;
+
+                    a {
+                        width: 17%;
+
+                        img {
+                            width: 90%;
+                        }
+                    }
 
 
 
@@ -33,6 +41,8 @@ body {
                             padding-top: 16px;
                             padding-bottom: 16px;
 
+
+
                             ul {
                                 @include flexbox(flex, space-around, center);
 
@@ -40,13 +50,16 @@ body {
 
                                 li {
                                     position: relative;
-                                    white-space: nowrap;
                                     padding: 1rem 1.5rem;
                                     font-size: 1.6rem;
 
+                                    .down-icon {
+                                        filter: invert(1);
+                                        width: 15px;
+                                        height: 15px;
+                                    }
+
                                     .nav-link {
-                                        white-space: nowrap;
-                                        padding: 1rem 1.5rem;
                                         font-size: 1.6rem;
 
 
@@ -65,31 +78,34 @@ body {
                                         overflow: auto;
                                         max-height: 85vh;
                                         margin-top: 8px;
-                                        padding: 0 16px;
+                                        padding: 33px;
+                                        width: 300px;
                                         border: 1px solid #dedcee;
                                         border-radius: 8px;
-                                        padding-top: 24px;
-                                        padding-bottom: 24px;
                                         background-color: $color-white;
                                         text-align: left;
                                         flex-direction: column;
                                         align-items: flex-start;
                                         position: absolute;
                                         top: 180%;
-                                        padding: 10px;
                                         display: none;
                                         z-index: 1000;
 
-                                        .nav-item {
+                                        li {
+                                            padding: 1rem 1.5rem;
+                                            color: #222;
+                                            max-width: 100%;
+
 
                                             &:hover {
                                                 color: $color-link-hover;
                                                 background-color: $color-white;
                                             }
 
+
+
                                             a {
-                                                padding: 10px 20px;
-                                                display: block;
+
                                                 color: #222;
                                                 font-size: 1.6rem;
 
@@ -131,12 +147,31 @@ body {
                             }
 
                             .button:hover {
-                                white-space: nowrap;
                                 border-style: solid;
                                 background-color: none;
                             }
 
                         }
+
+                        @media screen and (max-width:1182px) {
+                            .container-fluid {
+                                ul {
+                                    li {
+                                        padding: 1rem 0.8rem;
+                                    }
+
+                                    .button-log {
+                                        padding: 1rem;
+                                        margin: 0;
+                                    }
+
+                                    .button-demo {
+                                        padding: 1rem;
+                                    }
+                                }
+                            }
+                        }
+
                     }
 
                     .openMenu {
@@ -144,6 +179,7 @@ body {
 
                         .icon-menu {}
                     }
+
 
 
                 }
@@ -185,6 +221,12 @@ body {
                                 padding: 1rem 1.5rem;
                                 font-size: 1.6rem;
 
+                                .down-icon {
+                                    filter: invert(1);
+                                    width: 15px;
+                                    height: 15px;
+                                }
+
 
 
                             }
@@ -214,6 +256,8 @@ body {
                                 display: none;
 
                                 .nav-item {
+
+
 
                                     a {
                                         padding: 10px 20px;
@@ -315,7 +359,7 @@ body {
                     padding: 20px;
 
                     img {
-                        color: #867df3;
+                        background-color: #867df3;
                         vertical-align: middle;
                         display: inline-block;
                         max-width: 100%;
@@ -323,6 +367,7 @@ body {
                         padding-bottom: 0;
                         border: 1px transparent;
                         border-radius: 16px;
+                        color: $color-white;
                     }
                 }
 
@@ -361,11 +406,11 @@ body {
 
 
                         #close {
-                            font-size: 3rem;
-                            float: right;
+                            font-size: 2rem;
+                            padding-top: 3rem;
                             color: $color-white;
-                            margin: 2rem;
                             cursor: pointer;
+                            float: right;
                         }
 
                         .iframe-container {
@@ -626,7 +671,6 @@ body {
 
                     .col-4 {
                         .tab-testimonial {
-                            margin-top: 4.8rem;
                             display: flex;
                             padding: 2.4rem 0.8rem;
                             align-items: center;
@@ -671,7 +715,7 @@ body {
 
                 .content-testimonials {
                     position: relative;
-                    padding-bottom: 20rem;
+                    padding-bottom: 30rem;
 
                     .content-testimonial {
                         text-align: left;
@@ -982,6 +1026,46 @@ body {
 }
 
 
+@media only screen and (max-width:1200px) {
+    body {
+        header {
+            .custom-nav {
+
+
+
+                nav {
+
+                    .container-fluid {
+
+                        .navbar {
+
+                            .nav-item {
+                                li {
+                                    position: relative;
+                                    padding: 0;
+
+                                    a {
+                                        padding: 1rem;
+                                        font-size: 1.6rem;
+
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
 @media only screen and (max-width:992px) {
     body {
         header {
@@ -991,6 +1075,14 @@ body {
                 @include flexbox(flex, space-around, center);
                 width: 100%;
                 left: 0;
+
+                a {
+                    width: 25% !important;
+
+                    img {
+                        width: 100% !important;
+                    }
+                }
 
 
 
@@ -1662,6 +1754,26 @@ body {
 @media only screen and (max-width:768) {
     body {
 
+        .custom-nav {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            @include flexbox(flex, space-around, center);
+            width: 100%;
+            left: 0;
+
+            a {
+                width: 30% !important;
+
+                img {
+                    width: 100% !important;
+                }
+            }
+
+
+
+
+
+        }
 
         .section-blog {
             background-color: #1b1734;
@@ -1701,7 +1813,21 @@ body {
     body {
         background-color: $color-primary;
 
+        .custom-nav {
 
+            a {
+                width: 30% !important;
+
+                img {
+                    width: 100% !important;
+                }
+            }
+
+
+
+
+
+        }
 
 
 
@@ -1918,8 +2044,8 @@ body {
                 outline: none;
                 display: block;
                 position: fixed;
-                height: 56px;
-                width: 56px;
+                height: 42px;
+                width: 42px;
                 cursor: pointer;
                 border-radius: 50%;
                 background-color: $color-secondary;
@@ -1952,9 +2078,15 @@ body {
                         @include flexbox(flex, space-between, center);
                         width: 100%;
                         left: 0;
-                        padding: 0 20px;
+                        padding: 20px;
 
+                        a {
+                            width: 40% !important;
 
+                            img {
+                                width: 100% !important;
+                            }
+                        }
 
                         nav {
 
@@ -2714,8 +2846,8 @@ body {
                 outline: none;
                 display: block;
                 position: fixed;
-                height: 56px;
-                width: 56px;
+                height: 34px;
+                width: 34px;
                 cursor: pointer;
                 border-radius: 50%;
                 background-color: $color-secondary;

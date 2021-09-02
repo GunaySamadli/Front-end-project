@@ -1,0 +1,242 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    .log {
+        padding: 0;
+        margin: 0;
+
+        .col-lg-5 {
+            background-color: $color-bg-white;
+
+            .log-head {
+                padding: 1.5rem 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .svg-icon {
+                    padding: 0.5rem;
+                    margin-right: 0.75rem;
+                    border-radius: 4px;
+                    width: 4rem;
+                    height: 4rem;
+                    background-color: $color-link-hover;
+                }
+
+
+
+                @media screen and (max-width:992px) {
+                    justify-content: flex-start;
+                    padding-left: 24px;
+
+                }
+
+            }
+
+            .log-info {
+                height: 100vh;
+                margin-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h5 {
+                    width: 316px;
+                    font-size: 24px;
+                    line-height: 140%;
+                    font-weight: 600;
+                    color: rgb(91, 85, 127);
+                    text-align: center;
+                    padding: 2rem 0;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 150%;
+                    font-weight: 600;
+                    color: rgb(132, 128, 159);
+                    text-align: center;
+                    padding: 3rem 0;
+                }
+
+                .container-trust-logos {
+                    width: 316px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        color: rgb(132, 128, 159);
+                        width: 10rem;
+                        padding-right: 1rem;
+                    }
+                }
+
+                @media screen and (max-width:1028px) {
+                    height: 50% !important;
+
+                }
+
+                @media screen and (max-width:992px) {
+                    display: none !important;
+
+                }
+            }
+        }
+
+        .col-lg-7 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            margin: 0 auto;
+
+
+            .form-section {
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 0rem;
+
+                .form-info {
+                    color: black;
+
+                    h1 {
+                        font-size: 32px;
+                        line-height: 140%;
+
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 150%;
+                        font-weight: 400;
+                        margin: 4rem 0;
+                    }
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+
+                }
+
+                .form-control {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 15px;
+                    padding-bottom: 15px;
+                    position: relative;
+                    padding-bottom: 2rem;
+                }
+
+
+                .form-control label {
+                    color: black;
+                    font-size: 14px;
+                    line-height: 150%;
+                    font-weight: 500;
+                    cursor: pointer;
+                    margin-bottom: 1rem;
+
+                }
+
+                .form-control input {
+                    font-size: 16px;
+                    line-height: 150%;
+                    padding: 0.5rem 1rem;
+                    width: 100%;
+                    border-radius: 4px;
+                    border-style: solid;
+                    border-color: rgb(229, 231, 235);
+                }
+
+
+
+                .form-control small {
+                    visibility: hidden;
+                    position: absolute;
+
+                    bottom: 0;
+                    left: 0;
+                }
+
+                .form-control.error small {
+                    color: #e74c3c;
+                    visibility: visible;
+                    font-size: 1.4rem;
+                }
+
+                small .errorFullname {
+                    visibility: visible;
+                }
+            }
+
+            .form-foot {
+                display: flex;
+                flex-direction: column !important;
+                margin: 4rem 0;
+
+                p {
+                    color: black;
+                    font-size: 14px;
+                    line-height: 150%;
+                    font-weight: 400;
+                    margin-bottom: 1rem;
+
+                    a {
+                        color: $color-secondary;
+                        border-bottom: 1px solid $color-secondary;
+                        padding: 0 !important;
+                        font-size: 14px;
+                        font-weight: 400;
+                        width: max-content;
+                    }
+                }
+
+
+            }
+
+            .buttons {
+                margin-bottom: 16px;
+                display: flex;
+                justify-content: space-between !important;
+
+                .back {
+                    border: 1px solid rgb(182, 158, 182);
+                }
+
+
+                a {
+                    padding: 0 !important;
+
+
+                    button {
+                        color: $color-primary;
+                        border: none;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-right: 0 !important;
+                    }
+                }
+
+            }
+
+            @media screen and (max-width:1028px) {
+                min-width: 320px !important;
+                text-align: left;
+                margin-bottom: 3rem !important;
+
+            }
+
+
+
+        }
+
+
+    }
+}

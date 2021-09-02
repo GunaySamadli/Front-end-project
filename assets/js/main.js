@@ -3,10 +3,10 @@ $(document).ready(function () {
     $('.nav-link').on('click', function (e) {
         e.preventDefault();
         if ($(this).next('.drop-menu').css('display') == 'none') {
-            $(this).find('svg').css('transform', 'rotate(90deg)');
+            $(this).find('img').css('transform', 'rotate(180deg)');
         }
         else {
-            $(this).find('svg').css('transform', 'rotate(0deg)');
+            $(this).find('img').css('transform', 'rotate(0deg)');
         }
 
         $(this).next('.drop-menu').slideToggle();
@@ -144,4 +144,12 @@ $(document).ready(function () {
         duration: 1200,
     });
 });
+
+
+
+
+
+// form
+
+
 

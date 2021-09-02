@@ -1,0 +1,135 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    .log {
+        padding: 0;
+        margin: 0;
+
+        .col-lg-5 {
+            background-color: $color-bg-white;
+
+            .log-head {
+                padding: 1.5rem 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .svg-icon {
+                    padding: 0.5rem;
+                    margin-right: 0.75rem;
+                    border-radius: 4px;
+                    width: 4rem;
+                    height: 4rem;
+                    background-color: $color-link-hover;
+                }
+
+                @media screen and (max-width:1028px) {
+                    justify-content: flex-start;
+                    padding-left: 24px;
+
+                }
+
+            }
+
+            .log-info {
+                height: 100%;
+                margin-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h5 {
+                    width: 316px;
+                    font-size: 24px;
+                    line-height: 140%;
+                    font-weight: 600;
+                    color: rgb(91, 85, 127);
+                    text-align: center;
+                    padding: 2rem 0;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 150%;
+                    font-weight: 600;
+                    color: rgb(132, 128, 159);
+                    text-align: center;
+                    padding: 3rem 0;
+                }
+
+                .container-trust-logos {
+                    width: 316px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        color: rgb(132, 128, 159);
+                        width: 10rem;
+                        padding-right: 1rem;
+                    }
+                }
+
+                @media screen and (max-width:992px) {
+                    justify-content: flex-start;
+                    padding-left: 24px;
+
+                }
+            }
+        }
+
+        .col-lg-7 {
+            margin-top: 5rem !important;
+
+            .form-section {
+
+                .form-info {
+                    color: black;
+
+                    h1 {
+                        font-size: 32px;
+                        line-height: 140%;
+
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 150%;
+                        font-weight: 400;
+                        margin: 4rem 0;
+                    }
+                }
+
+                .form-footer {
+                    font-size: 1.5rem;
+
+
+                    a {
+                        color: $color-secondary !important;
+                    }
+
+                    p {
+                        color: $color-black !important;
+                        margin-top: 2rem;
+
+
+                    }
+                }
+
+            }
+
+            @media screen and (max-width:1028px) {
+                min-width: 320px !important;
+                text-align: left;
+                margin-bottom: 3rem !important;
+
+            }
+        }
+
+
+    }
+}
