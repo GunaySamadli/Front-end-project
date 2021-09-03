@@ -33,6 +33,8 @@ body {
 
         @media screen and (max-width:768px) {
             padding: 6rem;
+
+
         }
     }
 
@@ -98,12 +100,16 @@ body {
         }
 
         .button-testimonials {
+
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            padding-left: 4.6rem;
             flex-wrap: wrap;
-            margin-bottom: 5rem;
+            justify-content: center;
+
+            .button-testimonial {
+                margin-bottom: 50px;
+                margin-left: 16px;
+                white-space: nowrap;
+            }
 
             .button-testimonial.active .button {
 
@@ -123,29 +129,26 @@ body {
 
 
             .row {
-                max-width: 1220rem;
-                padding-top: 4.8rem;
-                padding-bottom: 4rem;
                 border-radius: 1.6rem;
                 background-color: $color-primary-hover;
-                height: 50rem;
                 text-align: center;
 
                 .button-contents {
                     position: relative;
 
+
                     .button-content {
-                        visibility: hidden;
-                        position: absolute;
+                        display: none;
+                        position: relative;
+                        border: 1px transparent;
+                        text-align: left;
                         width: 100%;
-                        height: 100%;
-                        @include flexbox();
 
                         .col-lg-6 {
                             font-family: $font-family-base;
 
                             .heading {
-                                font-size: 4rem;
+                                font-size: 2.2rem;
                                 line-height: 130%;
                                 font-weight: 600;
                                 text-align: left;
@@ -176,13 +179,22 @@ body {
                             }
                         }
 
-                        .col-lg-6 img {
-                            max-width: 100%;
+                        .col-lg-6 {
+                            .image {
+                                border-radius: 4px;
+
+                                img {
+                                    width: 80%;
+                                    padding: 3rem 0;
+
+                                }
+                            }
                         }
+
                     }
 
                     .button-content.active {
-                        visibility: visible;
+                        display: block;
                     }
                 }
 
@@ -211,7 +223,7 @@ body {
         }
 
         h2 {
-            font-size: 30px;
+            font-size: 25px;
             line-height: 40px;
             margin-bottom: 2rem;
         }
@@ -262,12 +274,15 @@ body {
         padding: 14rem 8rem;
 
         .col-lg-6 {
+            text-align: center;
 
             h2 {
                 font-size: 30px;
                 line-height: 40px;
                 margin-bottom: 3rem;
             }
+
+            margin-bottom: 3rem;
         }
 
         .contact-form {
@@ -481,6 +496,8 @@ body {
 }
 
 
+
+
 @media only screen and (max-width:768px) {
     .filter {
         padding: 14rem 8rem;
@@ -507,7 +524,6 @@ body {
         .button-testimonials {
             display: flex;
             flex-direction: row;
-            padding-left: 4.6rem;
             flex-wrap: wrap;
             align-items: center !important;
 
@@ -590,6 +606,7 @@ body {
 
                         .col-lg-6 img {
                             max-width: 60% !important;
+
                             padding-top: 3rem !important;
                         }
                     }
@@ -606,4 +623,157 @@ body {
             }
         }
     }
+
+}
+
+@media only screen and (max-width:576px) {
+    .info-button {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        .button-log {
+            display: inline-block;
+            margin-top: 3rem;
+            width: max-content;
+        }
+    }
+
+    .filter {
+        padding: 4rem !important;
+
+        .filter-info {
+
+
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+                text-align: center;
+            }
+
+            p {
+                text-align: center !important;
+                margin-bottom: 80px;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 300;
+                color: $color-gray;
+            }
+        }
+
+        .button-testimonials {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .button-testimonial {
+                margin-bottom: 50px;
+                margin-left: 16px;
+                white-space: nowrap;
+            }
+
+            .button-testimonial.active .button {
+
+                border-color: #66e7d8;
+                background-color: #0f0d1e;
+            }
+        }
+
+
+
+        .container.footer {
+            max-width: 1220rem;
+            padding-top: 10rem;
+            padding-bottom: 5rem;
+            border-radius: 1.6rem;
+
+
+
+            .row {
+                border-radius: 1.6rem;
+                background-color: $color-primary-hover;
+                text-align: center;
+
+                .button-contents {
+                    position: relative;
+
+
+                    .button-content {
+                        display: none;
+                        position: relative;
+                        border: 1px transparent;
+                        text-align: left;
+                        width: 100%;
+
+                        .col-lg-6 {
+                            font-family: $font-family-base;
+
+                            .heading {
+                                font-size: 2.2rem;
+                                line-height: 130%;
+                                font-weight: 600;
+                                text-align: left;
+                                padding: 0 2.4rem;
+                                margin-top: 5rem;
+                                margin-bottom: 2rem;
+                            }
+
+                            .paragraph {
+                                text-align: left;
+                                padding: 0 2.4rem;
+                                font-size: 1.8rem;
+                                font-weight: 300;
+                                margin-top: 0;
+                                margin-bottom: 2.4rem;
+                                line-height: 150%;
+                            }
+
+                            .link {
+                                padding: 0 2.4rem;
+                                font-size: 1.6rem;
+                                text-align: left;
+
+                                a {
+                                    text-decoration: underline;
+                                    padding-right: 1rem;
+                                }
+                            }
+                        }
+
+                        .col-lg-6 {
+                            .image {
+                                border-radius: 4px;
+
+                                img {
+                                    width: 80%;
+                                    padding: 3rem 0;
+
+                                }
+                            }
+                        }
+
+                    }
+
+                    .button-content.active {
+                        display: block;
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+    .benefits {
+        padding: 3rem !important;
+    }
+
+
+    .contact {
+        padding: 2rem !important;
+
+    }
+
 }

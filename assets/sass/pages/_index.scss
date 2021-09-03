@@ -22,7 +22,7 @@ body {
                     width: 100%;
                     left: 0;
                     padding: 0 3rem;
-                    height: 60;
+                    height: 80;
 
                     a {
                         width: 16%;
@@ -165,6 +165,25 @@ body {
 
                         }
 
+                        @media screen and (max-width:1184px) {
+                            .container-fluid {
+                                ul {
+                                    li {
+                                        padding: 1rem 0.6rem;
+                                    }
+
+                                    .button-log {
+                                        padding: 0.9rem;
+                                        margin: 0;
+                                    }
+
+                                    .button-demo {
+                                        padding: 0.9rem;
+                                    }
+                                }
+                            }
+                        }
+
                         @media screen and (max-width:1182px) {
                             .container-fluid {
                                 ul {
@@ -183,6 +202,8 @@ body {
                                 }
                             }
                         }
+
+
 
                     }
 
@@ -205,12 +226,12 @@ body {
 
         .custom-responsive-nav {
             position: fixed;
-            z-index: 999999;
+            z-index: 1000;
             width: 100%;
             height: 0;
             overflow: hidden;
             transition: all 0.3s linear;
-            top: 5.6rem;
+            top: 7.6rem;
             left: 0px;
 
             nav {
@@ -1045,6 +1066,7 @@ body {
             position: fixed;
             height: 56px;
             width: 56px;
+            z-index: 100;
             cursor: pointer;
             border-radius: 50%;
             background-color: $color-secondary;
@@ -2569,14 +2591,16 @@ body {
 
                             .btn-product {
                                 display: block;
-                                width: 80%;
+                                width: 100%;
                                 margin-top: auto;
                                 margin-bottom: 48px;
                                 padding: 10px 16px;
-                                border: 1px solid #fff;
                                 border-radius: 4px;
-                                font-size: 1.6rem;
                                 font-weight: 300;
+
+                                a {
+                                    font-size: 1.2rem;
+                                }
                             }
 
                         }
@@ -2825,6 +2849,7 @@ body {
 
             .backtotop {
                 position: fixed;
+
                 bottom: 20px;
                 right: 30px;
                 outline: none;

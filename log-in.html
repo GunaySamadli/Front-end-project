@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./assets/css/icon.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <title>logIn</title>
+    <title>Panther</title>
 </head>
 
 <body style="background-color: transparent; ">
     <section class="log" style="height: 100vh">
         <div class="row">
-            <div class="col-lg-5">
+            <div class="col-left col-lg-5 ">
                 <div class="log-head">
                     <svg class="svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="black"
                         xmlns="http://www.w3.org/2000/svg" class="sc-hGPAah CoLgZ">
@@ -68,42 +68,40 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-right col-lg-7">
                 <div class="form-section">
-                    <div class="form-section">
-                        <div class="form-info">
-                            <h1>
-                                Welcome back!
-                            </h1>
-                            <p>
-                                Log in to your Panther account.
-                            </p>
+                    <div class="form-info">
+                        <h1>
+                            Welcome back!
+                        </h1>
+                        <p>
+                            Log in to your Panther account.
+                        </p>
+                    </div>
+                    <form class="form" id="form">
+                        <div class="form-control ">
+                            <label> Email</label>
+                            <input type="email" id="email">
+                            <small></small>
                         </div>
-                        <form class="form" id="form">
-                            <div class="form-control ">
-                                <label> Email</label>
-                                <input type="email" id="email">
-                                <small></small>
-                            </div>
-                            <div class="form-control">
-                                <label> Password</label>
-                                <input type="password" id="password">
-                                <small></small>
-                            </div>
-
-                            <div class="buttons">
-                                <button style="color: white;" type="submit" class="sign-up button button-demo">Log
-                                    in</button>
-
-                            </div>
-                        </form>
-                        <div class="form-footer">
-                            <a href="./log-password.html">Forgot Password →</a>
-                            <p>
-                                Don’t have a Panther account?
-                                <a href="./sign.html">Sign up →</a>
-                            </p>
+                        <div class="form-control">
+                            <label> Password</label>
+                            <input type="password" id="password">
+                            <small></small>
                         </div>
+
+                        <div class="buttons">
+                            <button style="color: white;" type="submit" class="sign-up button button-demo">Log
+                                in</button>
+
+                        </div>
+                    </form>
+                    <div class="form-footer">
+                        <a href="./log-password.html">Forgot Password →</a>
+                        <p>
+                            Don’t have a Panther account?
+                            <a href="./sign.html">Sign up →</a>
+                        </p>
                     </div>
                 </div>
             </div>

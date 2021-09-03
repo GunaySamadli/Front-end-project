@@ -6,7 +6,7 @@ body {
         padding: 0;
         margin: 0;
 
-        .col-lg-5 {
+        .col-left {
             background-color: $color-bg-white;
 
             .log-head {
@@ -87,7 +87,7 @@ body {
             }
         }
 
-        .col-lg-7 {
+        .col-right {
             display: flex;
             justify-content: center;
             align-items: center;
