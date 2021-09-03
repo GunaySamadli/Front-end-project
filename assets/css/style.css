@@ -8833,271 +8833,186 @@ body {
     @media screen and (max-width: 768px) {
       body .header {
         padding: 6rem; } }
-  body .new {
-    background-color: #1b1734;
-    padding: 80px 48px; }
-    body .new h5 {
-      margin-bottom: 40px;
-      padding: 4px 12px;
-      border-radius: 4px;
-      background-color: rgba(91, 53, 213, 0.2);
-      letter-spacing: .6px;
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 25px;
-      font-weight: 400;
-      font-family: "Roboto", sans-serif;
-      width: max-content; }
-    body .new .col-lg-6 h3 {
-      font-size: 33px;
-      line-height: 40px;
-      font-weight: 600;
-      text-align: left;
-      margin-bottom: 120px;
-      padding-top: 1.5rem; }
-    body .new .col-lg-6 p {
-      font-size: 14px;
-      line-height: 20px;
-      font-weight: 300;
-      margin-bottom: 120px; }
-  body .filter {
-    padding: 14rem 8rem; }
-    body .filter .filter-info h2 {
-      font-size: 30px;
-      line-height: 40px;
-      text-align: center; }
-    body .filter .filter-info p {
-      text-align: center !important;
-      margin-bottom: 80px;
-      font-size: 18px;
-      line-height: 24px;
-      font-weight: 300;
-      color: #adaabf; }
-    body .filter .button-testimonials {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
-      body .filter .button-testimonials .button-testimonial {
-        margin-bottom: 50px;
-        margin-left: 16px;
-        white-space: nowrap; }
-      body .filter .button-testimonials .button-testimonial.active .button {
-        border-color: #66e7d8;
-        background-color: #0f0d1e; }
-    body .filter .container.footer {
-      max-width: 1220rem;
-      padding-top: 10rem;
-      padding-bottom: 5rem;
-      border-radius: 1.6rem; }
-      body .filter .container.footer .row {
-        border-radius: 1.6rem;
-        background-color: #1b1734;
-        text-align: center; }
-        body .filter .container.footer .row .button-contents {
-          position: relative; }
-          body .filter .container.footer .row .button-contents .button-content {
-            display: none;
-            position: relative;
-            border: 1px transparent;
-            text-align: left;
-            width: 100%; }
-            body .filter .container.footer .row .button-contents .button-content .col-lg-6 {
-              font-family: var(--bs-font-sans-serif); }
-              body .filter .container.footer .row .button-contents .button-content .col-lg-6 .heading {
-                font-size: 2.2rem;
-                line-height: 130%;
-                font-weight: 600;
-                text-align: left;
-                padding: 0 2.4rem;
-                margin-top: 5rem;
-                margin-bottom: 2rem; }
-              body .filter .container.footer .row .button-contents .button-content .col-lg-6 .paragraph {
-                text-align: left;
-                padding: 0 2.4rem;
-                font-size: 1.8rem;
-                font-weight: 300;
-                margin-top: 0;
-                margin-bottom: 2.4rem;
-                line-height: 150%; }
-              body .filter .container.footer .row .button-contents .button-content .col-lg-6 .link {
-                padding: 0 2.4rem;
-                font-size: 1.6rem;
-                text-align: left; }
-                body .filter .container.footer .row .button-contents .button-content .col-lg-6 .link a {
-                  text-decoration: underline;
-                  padding-right: 1rem; }
-            body .filter .container.footer .row .button-contents .button-content .col-lg-6 .image {
-              border-radius: 4px; }
-              body .filter .container.footer .row .button-contents .button-content .col-lg-6 .image img {
-                width: 80%;
-                padding: 3rem 0; }
-          body .filter .container.footer .row .button-contents .button-content.active {
-            display: block; }
-  body .benefits {
-    padding: 14rem 8rem;
-    background-color: #1b1734; }
-    body .benefits h5 {
-      margin-bottom: 40px;
-      padding: 4px 12px;
-      border-radius: 4px;
-      background-color: rgba(91, 53, 213, 0.2);
-      letter-spacing: .6px;
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 25px;
-      font-weight: 400;
-      font-family: "Roboto", sans-serif;
-      width: max-content; }
-    body .benefits h2 {
-      font-size: 25px;
-      line-height: 40px;
-      margin-bottom: 2rem; }
-    body .benefits .col-lg-6 .benefit-item {
-      display: flex;
-      margin-bottom: 16px;
-      padding-left: 32px;
-      font-size: 14px;
-      line-height: 20px; }
-    body .benefits .button-contact {
-      padding: 3rem; }
-  body .benefits.seconds {
-    background-color: #0f0d1e; }
-    body .benefits.seconds .button-contact .button {
-      background-color: #0f0d1e;
-      border-color: #ffffff; }
-    body .benefits.seconds .col-12 {
-      background-color: #5b35d5;
-      max-width: 1220rem;
-      padding-top: 10rem;
-      padding: 5rem;
-      border-radius: 1.6rem; }
-      body .benefits.seconds .col-12 h5 {
-        border: 1px solid #ffffff; }
-      body .benefits.seconds .col-12 a {
-        background-color: #0f0d1e; }
-  body .contact {
-    padding: 14rem 8rem; }
-    body .contact .col-lg-6 {
-      text-align: center;
-      margin-bottom: 3rem; }
-      body .contact .col-lg-6 h2 {
+  body main {
+    overflow: hidden; }
+    body main .new {
+      background-color: #1b1734;
+      padding: 80px 48px; }
+      body main .new h5 {
+        margin-bottom: 40px;
+        padding: 4px 12px;
+        border-radius: 4px;
+        background-color: rgba(91, 53, 213, 0.2);
+        letter-spacing: .6px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+        width: max-content; }
+      body main .new .col-lg-6 h3 {
+        font-size: 33px;
+        line-height: 40px;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 120px;
+        padding-top: 1.5rem; }
+      body main .new .col-lg-6 p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        margin-bottom: 120px; }
+    body main .filter {
+      padding: 14rem 8rem; }
+      body main .filter .filter-info h2 {
         font-size: 30px;
         line-height: 40px;
-        margin-bottom: 3rem; }
-    body .contact .contact-form {
-      background-color: #ffffff;
-      width: 85%;
-      margin-right: auto;
-      margin-left: auto;
-      border-radius: 10px; }
-      body .contact .contact-form h2 {
-        color: #0f0d1e; }
-      body .contact .contact-form form {
-        display: flex;
-        width: 100%;
-        padding: 40px;
-        flex-direction: column;
-        border-radius: 16px; }
-        body .contact .contact-form form .holder-form .holder-text-field {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 1.6rem; }
-          body .contact .contact-form form .holder-form .holder-text-field label {
-            color: #000000;
-            margin-bottom: 4px;
-            font-size: 16px;
-            font-weight: 400; }
-            body .contact .contact-form form .holder-form .holder-text-field label span {
-              color: #5b35d5; }
-          body .contact .contact-form form .holder-form .holder-text-field textarea {
-            max-width: 450px;
-            min-height: 120px;
-            min-width: 100%;
-            margin-bottom: 0;
-            padding: 8px 12px;
-            border-radius: 4px;
-            color: #0f0d1e;
-            font-weight: 400;
-            margin-bottom: 2rem; }
-          body .contact .contact-form form .holder-form .holder-text-field input {
-            min-height: 50px;
-            margin-bottom: 0;
-            padding: 8px 12px;
-            border: 1px solid rgba(15, 13, 30, 0.2);
-            border-radius: 4px;
-            color: #0f0d1e;
-            font-weight: 400; }
-        body .contact .contact-form form .holder-form .form-checkbox {
-          padding-top: 4rem;
-          display: flex; }
-          body .contact .contact-form form .holder-form .form-checkbox label {
-            color: #0f0d1e;
-            margin-bottom: 0;
-            font-size: 14px;
-            line-height: 20px;
-            font-weight: 400; }
-          body .contact .contact-form form .holder-form .form-checkbox input {
-            width: 20px;
-            height: 20px;
-            margin-top: 0;
-            margin-right: 12px;
-            margin-left: 0;
-            border-color: #adaabf;
-            border-radius: 4px; }
-  body .faq {
-    padding: 14rem 8rem;
-    background-color: #1b1734; }
-    body .faq h2 {
-      font-size: 30px;
-      line-height: 40px; }
-    body .faq .faq-accordion {
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      body .faq .faq-accordion h4 {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 22px;
-        line-height: 30px;
-        font-weight: 400;
-        margin-bottom: 3rem; }
-      body .faq .faq-accordion img {
-        cursor: pointer; }
-    body .faq .accordion-content {
-      display: none;
-      margin-bottom: 1rem; }
-      body .faq .accordion-content p {
-        color: #adaabf;
+        text-align: center; }
+      body main .filter .filter-info p {
+        text-align: center !important;
+        margin-bottom: 80px;
         font-size: 18px;
         line-height: 24px;
         font-weight: 300;
-        max-width: 86%; }
-      body .faq .accordion-content .contact-form {
+        color: #adaabf; }
+      body main .filter .button-testimonials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        body main .filter .button-testimonials .button-testimonial {
+          margin-bottom: 50px;
+          margin-left: 16px;
+          white-space: nowrap; }
+        body main .filter .button-testimonials .button-testimonial.active .button {
+          border-color: #66e7d8;
+          background-color: #0f0d1e; }
+      body main .filter .container.footer {
+        max-width: 1220rem;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+        border-radius: 1.6rem; }
+        body main .filter .container.footer .row {
+          border-radius: 1.6rem;
+          background-color: #1b1734;
+          text-align: center; }
+          body main .filter .container.footer .row .button-contents {
+            position: relative; }
+            body main .filter .container.footer .row .button-contents .button-content {
+              display: none;
+              position: relative;
+              border: 1px transparent;
+              text-align: left;
+              width: 100%; }
+              body main .filter .container.footer .row .button-contents .button-content .col-lg-6 {
+                font-family: var(--bs-font-sans-serif); }
+                body main .filter .container.footer .row .button-contents .button-content .col-lg-6 .heading {
+                  font-size: 2.2rem;
+                  line-height: 130%;
+                  font-weight: 600;
+                  text-align: left;
+                  padding: 0 2.4rem;
+                  margin-top: 5rem;
+                  margin-bottom: 2rem; }
+                body main .filter .container.footer .row .button-contents .button-content .col-lg-6 .paragraph {
+                  text-align: left;
+                  padding: 0 2.4rem;
+                  font-size: 1.8rem;
+                  font-weight: 300;
+                  margin-top: 0;
+                  margin-bottom: 2.4rem;
+                  line-height: 150%; }
+                body main .filter .container.footer .row .button-contents .button-content .col-lg-6 .link {
+                  padding: 0 2.4rem;
+                  font-size: 1.6rem;
+                  text-align: left; }
+                  body main .filter .container.footer .row .button-contents .button-content .col-lg-6 .link a {
+                    text-decoration: underline;
+                    padding-right: 1rem; }
+              body main .filter .container.footer .row .button-contents .button-content .col-lg-6 .image {
+                border-radius: 4px; }
+                body main .filter .container.footer .row .button-contents .button-content .col-lg-6 .image img {
+                  width: 80%;
+                  padding: 3rem 0; }
+            body main .filter .container.footer .row .button-contents .button-content.active {
+              display: block; }
+    body main .benefits {
+      padding: 14rem 8rem;
+      background-color: #1b1734; }
+      body main .benefits h5 {
+        margin-bottom: 40px;
+        padding: 4px 12px;
+        border-radius: 4px;
+        background-color: rgba(91, 53, 213, 0.2);
+        letter-spacing: .6px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+        width: max-content; }
+      body main .benefits h2 {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 2rem; }
+      body main .benefits .col-lg-6 .benefit-item {
+        display: flex;
+        margin-bottom: 16px;
+        padding-left: 32px;
+        font-size: 14px;
+        line-height: 20px; }
+      body main .benefits .button-contact {
+        padding: 3rem; }
+    body main .benefits.seconds {
+      background-color: #0f0d1e; }
+      body main .benefits.seconds .button-contact .button {
+        background-color: #0f0d1e;
+        border-color: #ffffff; }
+      body main .benefits.seconds .col-12 {
+        background-color: #5b35d5;
+        max-width: 1220rem;
+        padding-top: 10rem;
+        padding: 5rem;
+        border-radius: 1.6rem; }
+        body main .benefits.seconds .col-12 h5 {
+          border: 1px solid #ffffff; }
+        body main .benefits.seconds .col-12 a {
+          background-color: #0f0d1e; }
+    body main .contact {
+      padding: 14rem 8rem; }
+      body main .contact .col-lg-6 {
+        text-align: center;
+        margin-bottom: 3rem; }
+        body main .contact .col-lg-6 h2 {
+          font-size: 30px;
+          line-height: 40px;
+          margin-bottom: 3rem; }
+      body main .contact .contact-form {
         background-color: #ffffff;
-        width: 100%;
+        width: 85%;
         margin-right: auto;
         margin-left: auto;
         border-radius: 10px; }
-        body .faq .accordion-content .contact-form h2 {
+        body main .contact .contact-form h2 {
           color: #0f0d1e; }
-        body .faq .accordion-content .contact-form form {
+        body main .contact .contact-form form {
           display: flex;
           width: 100%;
           padding: 40px;
           flex-direction: column;
           border-radius: 16px; }
-          body .faq .accordion-content .contact-form form .holder-form .holder-text-field {
+          body main .contact .contact-form form .holder-form .holder-text-field {
             display: flex;
             flex-direction: column;
             margin-bottom: 1.6rem; }
-            body .faq .accordion-content .contact-form form .holder-form .holder-text-field label {
+            body main .contact .contact-form form .holder-form .holder-text-field label {
               color: #000000;
               margin-bottom: 4px;
               font-size: 16px;
-              font-weight: 400; }
-              body .faq .accordion-content .contact-form form .holder-form .holder-text-field label span {
+              font-weight: 400;
+              text-align: left; }
+              body main .contact .contact-form form .holder-form .holder-text-field label span {
                 color: #5b35d5; }
-            body .faq .accordion-content .contact-form form .holder-form .holder-text-field textarea {
+            body main .contact .contact-form form .holder-form .holder-text-field textarea {
               max-width: 450px;
               min-height: 120px;
               min-width: 100%;
@@ -9107,7 +9022,7 @@ body {
               color: #0f0d1e;
               font-weight: 400;
               margin-bottom: 2rem; }
-            body .faq .accordion-content .contact-form form .holder-form .holder-text-field input {
+            body main .contact .contact-form form .holder-form .holder-text-field input {
               min-height: 50px;
               margin-bottom: 0;
               padding: 8px 12px;
@@ -9115,16 +9030,16 @@ body {
               border-radius: 4px;
               color: #0f0d1e;
               font-weight: 400; }
-          body .faq .accordion-content .contact-form form .holder-form .form-checkbox {
+          body main .contact .contact-form form .holder-form .form-checkbox {
             padding-top: 4rem;
             display: flex; }
-            body .faq .accordion-content .contact-form form .holder-form .form-checkbox label {
+            body main .contact .contact-form form .holder-form .form-checkbox label {
               color: #0f0d1e;
               margin-bottom: 0;
               font-size: 14px;
               line-height: 20px;
               font-weight: 400; }
-            body .faq .accordion-content .contact-form form .holder-form .form-checkbox input {
+            body main .contact .contact-form form .holder-form .form-checkbox input {
               width: 20px;
               height: 20px;
               margin-top: 0;
@@ -9132,6 +9047,94 @@ body {
               margin-left: 0;
               border-color: #adaabf;
               border-radius: 4px; }
+    body main .faq {
+      padding: 14rem 8rem;
+      background-color: #1b1734; }
+      body main .faq h2 {
+        font-size: 30px;
+        line-height: 40px; }
+      body main .faq .faq-accordion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        body main .faq .faq-accordion h4 {
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 22px;
+          line-height: 30px;
+          font-weight: 400;
+          margin-bottom: 3rem; }
+        body main .faq .faq-accordion img {
+          cursor: pointer; }
+      body main .faq .accordion-content {
+        display: none;
+        margin-bottom: 1rem; }
+        body main .faq .accordion-content p {
+          color: #adaabf;
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 300;
+          max-width: 86%; }
+        body main .faq .accordion-content .contact-form {
+          background-color: #ffffff;
+          width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+          border-radius: 10px; }
+          body main .faq .accordion-content .contact-form h2 {
+            color: #0f0d1e; }
+          body main .faq .accordion-content .contact-form form {
+            display: flex;
+            width: 100%;
+            padding: 40px;
+            flex-direction: column;
+            border-radius: 16px; }
+            body main .faq .accordion-content .contact-form form .holder-form .holder-text-field {
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 1.6rem; }
+              body main .faq .accordion-content .contact-form form .holder-form .holder-text-field label {
+                color: #000000;
+                margin-bottom: 4px;
+                font-size: 16px;
+                font-weight: 400; }
+                body main .faq .accordion-content .contact-form form .holder-form .holder-text-field label span {
+                  color: #5b35d5; }
+              body main .faq .accordion-content .contact-form form .holder-form .holder-text-field textarea {
+                max-width: 450px;
+                min-height: 120px;
+                min-width: 100%;
+                margin-bottom: 0;
+                padding: 8px 12px;
+                border-radius: 4px;
+                color: #0f0d1e;
+                font-weight: 400;
+                margin-bottom: 2rem; }
+              body main .faq .accordion-content .contact-form form .holder-form .holder-text-field input {
+                min-height: 50px;
+                margin-bottom: 0;
+                padding: 8px 12px;
+                border: 1px solid rgba(15, 13, 30, 0.2);
+                border-radius: 4px;
+                color: #0f0d1e;
+                font-weight: 400; }
+            body main .faq .accordion-content .contact-form form .holder-form .form-checkbox {
+              padding-top: 4rem;
+              display: flex; }
+              body main .faq .accordion-content .contact-form form .holder-form .form-checkbox label {
+                color: #0f0d1e;
+                margin-bottom: 0;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400; }
+              body main .faq .accordion-content .contact-form form .holder-form .form-checkbox input {
+                width: 20px;
+                height: 20px;
+                margin-top: 0;
+                margin-right: 12px;
+                margin-left: 0;
+                border-color: #adaabf;
+                border-radius: 4px; }
 
 @media only screen and (max-width: 768px) {
   .filter {

@@ -38,382 +38,263 @@ body {
         }
     }
 
-    .new {
-        background-color: $color-primary-hover;
-        padding: 80px 48px;
+    main {
+        overflow: hidden;
 
-        h5 {
-            margin-bottom: 40px;
-            padding: 4px 12px;
-            border-radius: 4px;
-            background-color: rgba(91, 53, 213, .2);
-            letter-spacing: .6px;
-            text-transform: uppercase;
-            font-size: 14px;
-            line-height: 25px;
-            font-weight: 400;
-            font-family: $font-family-primary;
-            width: max-content;
-        }
-
-        .col-lg-6 {
-
-
-            h3 {
-                font-size: 33px;
-                line-height: 40px;
-                font-weight: 600;
-                text-align: left;
-                margin-bottom: 120px;
-                padding-top: 1.5rem;
-            }
-
-            p {
-                font-size: 14px;
-                line-height: 20px;
-                font-weight: 300;
-                margin-bottom: 120px;
-            }
-        }
-    }
-
-    .filter {
-        padding: 14rem 8rem;
-
-        .filter-info {
-
-
-            h2 {
-                font-size: 30px;
-                line-height: 40px;
-                text-align: center;
-            }
-
-            p {
-                text-align: center !important;
-                margin-bottom: 80px;
-                font-size: 18px;
-                line-height: 24px;
-                font-weight: 300;
-                color: $color-gray;
-            }
-        }
-
-        .button-testimonials {
-
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-
-            .button-testimonial {
-                margin-bottom: 50px;
-                margin-left: 16px;
-                white-space: nowrap;
-            }
-
-            .button-testimonial.active .button {
-
-                border-color: #66e7d8;
-                background-color: #0f0d1e;
-            }
-        }
-
-
-
-        .container.footer {
-            max-width: 1220rem;
-            padding-top: 10rem;
-            padding-bottom: 5rem;
-            border-radius: 1.6rem;
-
-
-
-            .row {
-                border-radius: 1.6rem;
-                background-color: $color-primary-hover;
-                text-align: center;
-
-                .button-contents {
-                    position: relative;
-
-
-                    .button-content {
-                        display: none;
-                        position: relative;
-                        border: 1px transparent;
-                        text-align: left;
-                        width: 100%;
-
-                        .col-lg-6 {
-                            font-family: $font-family-base;
-
-                            .heading {
-                                font-size: 2.2rem;
-                                line-height: 130%;
-                                font-weight: 600;
-                                text-align: left;
-                                padding: 0 2.4rem;
-                                margin-top: 5rem;
-                                margin-bottom: 2rem;
-                            }
-
-                            .paragraph {
-                                text-align: left;
-                                padding: 0 2.4rem;
-                                font-size: 1.8rem;
-                                font-weight: 300;
-                                margin-top: 0;
-                                margin-bottom: 2.4rem;
-                                line-height: 150%;
-                            }
-
-                            .link {
-                                padding: 0 2.4rem;
-                                font-size: 1.6rem;
-                                text-align: left;
-
-                                a {
-                                    text-decoration: underline;
-                                    padding-right: 1rem;
-                                }
-                            }
-                        }
-
-                        .col-lg-6 {
-                            .image {
-                                border-radius: 4px;
-
-                                img {
-                                    width: 80%;
-                                    padding: 3rem 0;
-
-                                }
-                            }
-                        }
-
-                    }
-
-                    .button-content.active {
-                        display: block;
-                    }
-                }
-
-
-
-            }
-        }
-    }
-
-    .benefits {
-        padding: 14rem 8rem;
-        background-color: $color-primary-hover;
-
-        h5 {
-            margin-bottom: 40px;
-            padding: 4px 12px;
-            border-radius: 4px;
-            background-color: rgba(91, 53, 213, .2);
-            letter-spacing: .6px;
-            text-transform: uppercase;
-            font-size: 14px;
-            line-height: 25px;
-            font-weight: 400;
-            font-family: $font-family-primary;
-            width: max-content;
-        }
-
-        h2 {
-            font-size: 25px;
-            line-height: 40px;
-            margin-bottom: 2rem;
-        }
-
-        .col-lg-6 {
-
-
-            .benefit-item {
-                display: flex;
-                margin-bottom: 16px;
-                padding-left: 32px;
-                font-size: 14px;
-                line-height: 20px;
-            }
-        }
-
-        .button-contact {
-            padding: 3rem;
-        }
-    }
-
-    .benefits.seconds {
-        background-color: $color-primary;
-
-        .button-contact .button {
-            background-color: $color-primary;
-            border-color: $color-white;
-        }
-
-        .col-12 {
-            background-color: $color-secondary;
-            max-width: 1220rem;
-            padding-top: 10rem;
-            padding: 5rem;
-            border-radius: 1.6rem;
+        .new {
+            background-color: $color-primary-hover;
+            padding: 80px 48px;
 
             h5 {
-                border: 1px solid $color-white;
+                margin-bottom: 40px;
+                padding: 4px 12px;
+                border-radius: 4px;
+                background-color: rgba(91, 53, 213, .2);
+                letter-spacing: .6px;
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 25px;
+                font-weight: 400;
+                font-family: $font-family-primary;
+                width: max-content;
             }
 
-            a {
-                background-color: $color-primary;
-            }
-        }
-    }
+            .col-lg-6 {
 
-    .contact {
-        padding: 14rem 8rem;
 
-        .col-lg-6 {
-            text-align: center;
+                h3 {
+                    font-size: 33px;
+                    line-height: 40px;
+                    font-weight: 600;
+                    text-align: left;
+                    margin-bottom: 120px;
+                    padding-top: 1.5rem;
+                }
 
-            h2 {
-                font-size: 30px;
-                line-height: 40px;
-                margin-bottom: 3rem;
-            }
-
-            margin-bottom: 3rem;
-        }
-
-        .contact-form {
-            background-color: $color-white;
-            width: 85%;
-            margin-right: auto;
-            margin-left: auto;
-            border-radius: 10px;
-
-            h2 {
-                color: $color-primary;
-            }
-
-            form {
-                display: flex;
-                width: 100%;
-                padding: 40px;
-                flex-direction: column;
-                border-radius: 16px;
-
-                .holder-form {
-                    .holder-text-field {
-                        display: flex;
-                        flex-direction: column;
-                        margin-bottom: 1.6rem;
-
-                        label {
-                            color: $color-black;
-                            margin-bottom: 4px;
-                            font-size: 16px;
-                            font-weight: 400;
-
-                            span {
-                                color: $color-link-hover;
-                            }
-                        }
-
-                        textarea {
-                            max-width: 450px;
-                            min-height: 120px;
-                            min-width: 100%;
-                            margin-bottom: 0;
-                            padding: 8px 12px;
-                            border-radius: 4px;
-                            color: #0f0d1e;
-                            font-weight: 400;
-                            margin-bottom: 2rem;
-                        }
-
-                        input {
-                            min-height: 50px;
-                            margin-bottom: 0;
-                            padding: 8px 12px;
-                            border: 1px solid rgba(15, 13, 30, .2);
-                            border-radius: 4px;
-                            color: #0f0d1e;
-                            font-weight: 400;
-                        }
-                    }
-
-                    .form-checkbox {
-                        padding-top: 4rem;
-                        display: flex;
-
-                        label {
-                            color: $color-primary;
-                            margin-bottom: 0;
-                            font-size: 14px;
-                            line-height: 20px;
-                            font-weight: 400;
-                        }
-
-                        input {
-                            width: 20px;
-                            height: 20px;
-                            margin-top: 0;
-                            margin-right: 12px;
-                            margin-left: 0;
-                            border-color: $color-gray;
-                            border-radius: 4px;
-                        }
-                    }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    margin-bottom: 120px;
                 }
             }
         }
-    }
 
-    .faq {
-        padding: 14rem 8rem;
-        background-color: $color-primary-hover;
+        .filter {
+            padding: 14rem 8rem;
 
-        h2 {
-            font-size: 30px;
-            line-height: 40px;
+            .filter-info {
+
+
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center !important;
+                    margin-bottom: 80px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 300;
+                    color: $color-gray;
+                }
+            }
+
+            .button-testimonials {
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .button-testimonial {
+                    margin-bottom: 50px;
+                    margin-left: 16px;
+                    white-space: nowrap;
+                }
+
+                .button-testimonial.active .button {
+
+                    border-color: #66e7d8;
+                    background-color: #0f0d1e;
+                }
+            }
+
+
+
+            .container.footer {
+                max-width: 1220rem;
+                padding-top: 10rem;
+                padding-bottom: 5rem;
+                border-radius: 1.6rem;
+
+
+
+                .row {
+                    border-radius: 1.6rem;
+                    background-color: $color-primary-hover;
+                    text-align: center;
+
+                    .button-contents {
+                        position: relative;
+
+
+                        .button-content {
+                            display: none;
+                            position: relative;
+                            border: 1px transparent;
+                            text-align: left;
+                            width: 100%;
+
+                            .col-lg-6 {
+                                font-family: $font-family-base;
+
+                                .heading {
+                                    font-size: 2.2rem;
+                                    line-height: 130%;
+                                    font-weight: 600;
+                                    text-align: left;
+                                    padding: 0 2.4rem;
+                                    margin-top: 5rem;
+                                    margin-bottom: 2rem;
+                                }
+
+                                .paragraph {
+                                    text-align: left;
+                                    padding: 0 2.4rem;
+                                    font-size: 1.8rem;
+                                    font-weight: 300;
+                                    margin-top: 0;
+                                    margin-bottom: 2.4rem;
+                                    line-height: 150%;
+                                }
+
+                                .link {
+                                    padding: 0 2.4rem;
+                                    font-size: 1.6rem;
+                                    text-align: left;
+
+                                    a {
+                                        text-decoration: underline;
+                                        padding-right: 1rem;
+                                    }
+                                }
+                            }
+
+                            .col-lg-6 {
+                                .image {
+                                    border-radius: 4px;
+
+                                    img {
+                                        width: 80%;
+                                        padding: 3rem 0;
+
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .button-content.active {
+                            display: block;
+                        }
+                    }
+
+
+
+                }
+            }
         }
 
-        .faq-accordion {
-            @include flexbox();
+        .benefits {
+            padding: 14rem 8rem;
+            background-color: $color-primary-hover;
 
-            h4 {
-                margin-top: 0;
-                margin-bottom: 0;
-                font-size: 22px;
-                line-height: 30px;
+            h5 {
+                margin-bottom: 40px;
+                padding: 4px 12px;
+                border-radius: 4px;
+                background-color: rgba(91, 53, 213, .2);
+                letter-spacing: .6px;
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 25px;
                 font-weight: 400;
-                margin-bottom: 3rem;
+                font-family: $font-family-primary;
+                width: max-content;
             }
 
-            img {
-                cursor: pointer;
+            h2 {
+                font-size: 25px;
+                line-height: 40px;
+                margin-bottom: 2rem;
+            }
+
+            .col-lg-6 {
+
+
+                .benefit-item {
+                    display: flex;
+                    margin-bottom: 16px;
+                    padding-left: 32px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+            .button-contact {
+                padding: 3rem;
             }
         }
 
-        .accordion-content {
-            display: none;
-            margin-bottom: 1rem;
+        .benefits.seconds {
+            background-color: $color-primary;
 
-            p {
-                color: #adaabf;
-                font-size: 18px;
-                line-height: 24px;
-                font-weight: 300;
-                max-width: 86%;
+            .button-contact .button {
+                background-color: $color-primary;
+                border-color: $color-white;
+            }
+
+            .col-12 {
+                background-color: $color-secondary;
+                max-width: 1220rem;
+                padding-top: 10rem;
+                padding: 5rem;
+                border-radius: 1.6rem;
+
+                h5 {
+                    border: 1px solid $color-white;
+                }
+
+                a {
+                    background-color: $color-primary;
+                }
+            }
+        }
+
+        .contact {
+            padding: 14rem 8rem;
+
+            .col-lg-6 {
+                text-align: center;
+
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 3rem;
+                }
+
+                margin-bottom: 3rem;
             }
 
             .contact-form {
                 background-color: $color-white;
-                width: 100%;
+                width: 85%;
                 margin-right: auto;
                 margin-left: auto;
                 border-radius: 10px;
+
 
                 h2 {
                     color: $color-primary;
@@ -437,6 +318,7 @@ body {
                                 margin-bottom: 4px;
                                 font-size: 16px;
                                 font-weight: 400;
+                                text-align: left;
 
                                 span {
                                     color: $color-link-hover;
@@ -486,6 +368,130 @@ body {
                                 margin-left: 0;
                                 border-color: $color-gray;
                                 border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .faq {
+            padding: 14rem 8rem;
+            background-color: $color-primary-hover;
+
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            .faq-accordion {
+                @include flexbox();
+
+                h4 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-size: 22px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    margin-bottom: 3rem;
+                }
+
+                img {
+                    cursor: pointer;
+                }
+            }
+
+            .accordion-content {
+                display: none;
+                margin-bottom: 1rem;
+
+                p {
+                    color: #adaabf;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 300;
+                    max-width: 86%;
+                }
+
+                .contact-form {
+                    background-color: $color-white;
+                    width: 100%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    border-radius: 10px;
+
+                    h2 {
+                        color: $color-primary;
+                    }
+
+                    form {
+                        display: flex;
+                        width: 100%;
+                        padding: 40px;
+                        flex-direction: column;
+                        border-radius: 16px;
+
+                        .holder-form {
+                            .holder-text-field {
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 1.6rem;
+
+                                label {
+                                    color: $color-black;
+                                    margin-bottom: 4px;
+                                    font-size: 16px;
+                                    font-weight: 400;
+
+                                    span {
+                                        color: $color-link-hover;
+                                    }
+                                }
+
+                                textarea {
+                                    max-width: 450px;
+                                    min-height: 120px;
+                                    min-width: 100%;
+                                    margin-bottom: 0;
+                                    padding: 8px 12px;
+                                    border-radius: 4px;
+                                    color: #0f0d1e;
+                                    font-weight: 400;
+                                    margin-bottom: 2rem;
+                                }
+
+                                input {
+                                    min-height: 50px;
+                                    margin-bottom: 0;
+                                    padding: 8px 12px;
+                                    border: 1px solid rgba(15, 13, 30, .2);
+                                    border-radius: 4px;
+                                    color: #0f0d1e;
+                                    font-weight: 400;
+                                }
+                            }
+
+                            .form-checkbox {
+                                padding-top: 4rem;
+                                display: flex;
+
+                                label {
+                                    color: $color-primary;
+                                    margin-bottom: 0;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                }
+
+                                input {
+                                    width: 20px;
+                                    height: 20px;
+                                    margin-top: 0;
+                                    margin-right: 12px;
+                                    margin-left: 0;
+                                    border-color: $color-gray;
+                                    border-radius: 4px;
+                                }
                             }
                         }
                     }
